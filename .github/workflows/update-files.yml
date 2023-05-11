@@ -28,7 +28,7 @@ jobs:
         src="docs-staging/markdown-pages/"
         dest="pingcap-docs-website-scaffold/markdown-pages/"
 
-        rsync -av --delete --include='*/' --include='TOC.md' --include='_index.md' --include='_docHome.md' --exclude='*' "$src" "$dest"
+        rsync -av --delete --checksum --include='*/' --include='TOC.md' --include='_index.md' --include='_docHome.md' --exclude='*' "$src" "$dest"
 
         cp docs-staging/docs.json pingcap-docs-website-scaffold/
     - name: Commit and push changes

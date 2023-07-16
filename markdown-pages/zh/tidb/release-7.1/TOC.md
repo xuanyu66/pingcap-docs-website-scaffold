@@ -102,7 +102,8 @@
     - [对 TiDB 进行 CH-benCHmark 测试](/benchmark/benchmark-tidb-using-ch.md)
 - 数据迁移
   - [数据迁移概述](/migration-overview.md)
-  - [迁移工具](/migration-tools.md)
+  - [数据迁移工具](/migration-tools.md)
+  - [数据导入最佳实践](/tidb-lightning/data-import-best-practices.md)
   - 数据迁移场景
     - [从 Aurora 迁移数据到 TiDB](/migrate-aurora-to-tidb.md)
     - [从小数据量 MySQL 迁移数据到 TiDB](/migrate-small-mysql-to-tidb.md)
@@ -616,7 +617,7 @@
     - [RocksDB 简介](/storage-engine/rocksdb-overview.md)
     - [Titan 简介](/storage-engine/titan-overview.md)
     - [Titan 配置说明](/storage-engine/titan-configuration.md)
-    - [分区 Raft KV](/partitioned-raft-kv.md)
+    - [Partitioned Raft KV](/partitioned-raft-kv.md)
   - 存储引擎 TiFlash
     - [TiFlash 简介](/tiflash/tiflash-overview.md)
     - [构建 TiFlash 副本](/tiflash/create-tiflash-replicas.md)
@@ -1011,6 +1012,7 @@
   - v6.2
     - [6.2.0-DMR](/releases/release-6.2.0.md)
   - v6.1
+    - [6.1.7](/releases/release-6.1.7.md)
     - [6.1.6](/releases/release-6.1.6.md)
     - [6.1.5](/releases/release-6.1.5.md)
     - [6.1.4](/releases/release-6.1.4.md)

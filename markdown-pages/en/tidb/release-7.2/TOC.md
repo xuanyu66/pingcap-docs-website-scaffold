@@ -553,7 +553,9 @@
         - [TiCDC CSV Protocol](/ticdc/ticdc-csv.md)
       - [TiCDC Open API v2](/ticdc/ticdc-open-api-v2.md)
       - [TiCDC Open API v1](/ticdc/ticdc-open-api.md)
-      - [Guide for Developing a Storage Sink Consumer](/ticdc/ticdc-storage-consumer-dev-guide.md)
+      - TiCDC Data Consumption
+        - [TiCDC Row Data Checksum Verification Based on Avro](/ticdc/ticdc-avro-checksum-verification.md)
+        - [Guide for Developing a Storage Sink Consumer](/ticdc/ticdc-storage-consumer-dev-guide.md)
       - [Compatibility](/ticdc/ticdc-compatibility.md)
     - [Troubleshoot](/ticdc/troubleshoot-ticdc.md)
     - [FAQs](/ticdc/ticdc-faq.md)
@@ -1005,6 +1007,7 @@
   - v6.2
     - [6.2.0-DMR](/releases/release-6.2.0.md)
   - v6.1
+    - [6.1.7](/releases/release-6.1.7.md)
     - [6.1.6](/releases/release-6.1.6.md)
     - [6.1.5](/releases/release-6.1.5.md)
     - [6.1.4](/releases/release-6.1.4.md)

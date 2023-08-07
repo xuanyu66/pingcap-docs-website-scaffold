@@ -79,12 +79,12 @@ git -C "$REPO_DIR" checkout PR-"$PR_NUMBER"
 # Perform sync tasks
 for TASK in "${SYNC_TASKS[@]}"; do
 
-  SRC_DIR=$(echo "$TASK" | cut -d',' -f1)
+  SRC_DIR="$REPO_DIR/$(echo "$TASK" | cut -d',' -f1)"
   DEST_DIR="markdown-pages/$(echo "$TASK" | cut -d',' -f2)/$DIR_SUFFIX"
   mkdir -p "$DEST_DIR"
   # Only sync modified or added files
-  git -C "$REPO_DIR" diff --merge-base --name-only --diff-filter=AM origin/"$BASE_BRANCH" "$SRC_DIR" | tee /dev/fd/2 | \
-    rsync -av --files-from=- "$REPO_DIR" "$DEST_DIR"
+  git -C "$SRC_DIR" diff --merge-base --name-only --diff-filter=AMR origin/"$BASE_BRANCH" --relative | tee /dev/fd/2 | \
+    rsync -av --files-from=- "$SRC_DIR" "$DEST_DIR"
 
 done
 

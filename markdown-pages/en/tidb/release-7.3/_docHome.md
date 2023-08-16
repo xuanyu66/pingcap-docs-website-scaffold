@@ -5,37 +5,37 @@ hide_commit: true
 hide_leftNav: true
 ---
 
-<DocHomeContainer title="PingCAP ドキュメント" subTitle="Explore the how-to guides and references you need to use TiDB Cloud and TiDB, migrate data, and build your applications on the database.">
+<DocHomeContainer title="PingCAP Documentation" subTitle="Explore the how-to guides and references you need to use TiDB Cloud and TiDB, migrate data, and build your applications on the database.">
 
 <DocHomeSection label="TiDB Cloud" anchor="tidb-cloud" id="tidb-cloud">
 
-TiDB Cloud は、 TiDB の優れた機能をすべてクラウドに提供するフルマネージドの Database-as-a-Service (DBaaS) であり、データベースの複雑さではなくアプリケーションに集中できるようになります。
+TiDB Cloud is a fully-managed Database-as-a-Service (DBaaS) that brings everything great about TiDB to your cloud, letting you focus on your applications instead of the complexities of your database.
 
 <DocHomeCardContainer>
 
 <DocHomeCard href="https://docs.pingcap.com/tidbcloud" icon="doc2" label="TiDB Cloud Docs">
 
-TiDB Cloudのドキュメントをビュー。
+View the documentation for TiDB Cloud.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://docs.pingcap.com/tidbcloud/tidb-cloud-quickstart" icon="cloud5" label="Get Started with TiDB Cloud">
 
-TiDB Cloudを簡単に始めるためのガイド。
+Guide for an easy way to get started with TiDB Cloud.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://docs.pingcap.com/tidbcloud/tidb-cloud-poc" icon="cloud3" label="Perform a PoC with TiDB Cloud">
 
-TiDB Cloudを使用して概念実証 (PoC) を迅速に完了するのに役立ちます。
+Helps you quickly complete a Proof of Concept (PoC) with TiDB Cloud.
 
 </DocHomeCard>
 
 </DocHomeCardContainer>
 
-フルマネージド サービスでのリアルタイム分析用に構築されたクラウドネイティブの分散 SQL データベースの機能を活用します。
+Get the power of a cloud-native, distributed SQL database built for real-time analytics in a fully-managed service.
 
-<a href="https://tidbcloud.com/free-trial" class="button" target="_blank" referrerpolicy="no-referrer-when-downgrade">無料でお試しください</a>
+<a href="https://tidbcloud.com/free-trial" class="button" target="_blank" referrerpolicy="no-referrer-when-downgrade">Try Free</a>
 
 </DocHomeSection>
 
@@ -49,33 +49,33 @@ TiDB Cloudを使用して概念実証 (PoC) を迅速に完了するのに役立
 
 -->
 
-TiDB は、ハイブリッド トランザクションおよび分析処理 (HTAP) ワークロードをサポートするオープンソースの分散 SQL データベースです。 MySQL と互換性があり、水平スケーラビリティ、強力な一貫性、高可用性を備えています。 TiDB はセルフホスト環境またはクラウドにデプロイできます。
+TiDB is an open-source distributed SQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads. It is MySQL compatible and features horizontal scalability, strong consistency, and high availability. You can deploy TiDB in a self-hosted environment or in the cloud.
 
 <DocHomeCardContainer>
 
 <DocHomeCard href="https://docs.pingcap.com/tidb/stable" icon="doc1" label="TiDB Docs">
 
-TiDB のドキュメントをビュー。
+View the documentation for TiDB.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://docs.pingcap.com/tidb/stable/quick-start-with-tidb" icon="doc5" label="Get Started with TiDB">
 
-TiDB を始める最も簡単な方法を説明します。
+Walks you through the quickest way to get started with TiDB.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://docs.pingcap.com/tidb/stable/production-deployment-using-tiup" icon="cloud7" label="Deploy a Local TiDB Cluster">
 
-TiDB を本番環境にローカルにデプロイする方法を学びます。
+Learn how to deploy TiDB locally in a production environment.
 
 </DocHomeCard>
 
 </DocHomeCardContainer>
 
-オープンソースの TiDB プラットフォームは、Apache 2.0 ライセンスに基づいてリリースされ、コミュニティによってサポートされています。
+The open-source TiDB platform is released under the Apache 2.0 license and is supported by the community.
 
-<a href="https://en.pingcap.com/download/" class="button" target="_blank" referrerpolicy="no-referrer-when-downgrade">ダウンロード</a>
+<a href="https://en.pingcap.com/download/" class="button" target="_blank" referrerpolicy="no-referrer-when-downgrade">Download</a>
 
 </DocHomeSection>
 
@@ -85,13 +85,13 @@ TiDB を本番環境にローカルにデプロイする方法を学びます。
 
 <DocHomeCard href="https://docs.pingcap.com/tidb/stable/dev-guide-overview" icon="doc8" label="Developer Guide">
 
-TiDB アプリケーション開発者向けのドキュメント。
+Documentation for TiDB application developers.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://docs.pingcap.com/tidbcloud/dev-guide-overview" icon="cloud-dev" label="Developer Guide">
 
-TiDB Cloudアプリケーション開発者向けのドキュメント。
+Documentation for TiDB Cloud application developers.
 
 </DocHomeCard>
 
@@ -105,55 +105,55 @@ TiDB Cloudアプリケーション開発者向けのドキュメント。
 
 <DocHomeCard href="https://play.tidbcloud.com/?utm_source=docs&utm_medium=home_more_resources" icon="playground" label="TiDB Playground">
 
-登録なしで TiDB の機能を体験してください。
+Experience the capabilities of TiDB WITHOUT registration.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://en.pingcap.com/education/" icon="cloud1" label="PingCAP Education">
 
-よく設計されたオンライン コースとインストラクター主導のトレーニングを通じて、TiDB とTiDB Cloudについて学びます。
+Learn TiDB and TiDB Cloud through well-designed online courses and instructor-led training.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://en.pingcap.com/community/" icon="doc9" label="Community">
 
-Slack に参加するか、寄稿者になってください。
+Join us on Slack or become a contributor.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://en.pingcap.com/blog/" icon="doc10" label="Blog Posts">
 
-TiDB とTiDB Cloudに関する優れた記事をお読みください。
+Read great articles about TiDB and TiDB Cloud.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://en.pingcap.com/videos/" icon="doc11" label="Videos">
 
-TiDB とさまざまな使用例を説明する短いビデオをまとめたものをご覧ください。
+Watch a compilation of short videos describing TiDB and various use cases.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://en.pingcap.com/event/" icon="events" label="Events">
 
-PingCAP とコミュニティが主催するイベントについて学びます。
+Learn about events hosted by PingCAP and the community.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://en.pingcap.com/ebook-whitepaper/" icon="papers" label="eBooks & Papers">
 
-電子書籍と論文をダウンロードします。
+Download eBooks and papers.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://ossinsight.io/" icon="ossinsight" label="OSS Insight">
 
-TiDB Cloudを利用して、あらゆる GitHub リポジトリを詳細に分析する強力な洞察ツール。
+A powerful insight tool that analyzes any GitHub repository in depth, powered by TiDB Cloud.
 
 </DocHomeCard>
 
 <DocHomeCard href="https://github.com/pingcap/docs/blob/master/CONTRIBUTING.md" icon="contributor" label="Contribute">
 
-ドキュメントを改善するために一緒に働きましょう!
+Let's work together to improve the documentation!
 
 </DocHomeCard>
 

@@ -4,7 +4,7 @@
 - [文档中心](https://docs.pingcap.com/zh)
 - 关于 TiDB
   - [TiDB 简介](/overview.md)
-  - [TiDB 7.2 Release Notes](/releases/release-7.2.0.md)
+  - [TiDB 7.3 Release Notes](/releases/release-7.3.0.md)
   - [功能概览](/basic-features.md)
   - [与 MySQL 的兼容性](/mysql-compatibility.md)
   - [使用限制](/tidb-limitations.md)
@@ -140,7 +140,7 @@
     - [使用 TiUP 升级](/upgrade-tidb-using-tiup.md)
     - [使用 TiDB Operator](https://docs.pingcap.com/zh/tidb-in-kubernetes/stable/upgrade-a-tidb-cluster)
     - [平滑升级 TiDB](/smooth-upgrade-tidb.md)
-    - [TiFlash v6.2 升级帮助](/tiflash-620-upgrade-guide.md)
+    - [TiFlash 升级帮助](/tiflash-upgrade-guide.md)
   - 扩缩容
     - [使用 TiUP（推荐）](/scale-tidb-using-tiup.md)
     - [使用 TiDB Operator](https://docs.pingcap.com/zh/tidb-in-kubernetes/stable/scale-a-tidb-cluster)
@@ -186,6 +186,7 @@
   - [监控框架概述](/tidb-monitoring-framework.md)
   - [监控 API](/tidb-monitoring-api.md)
   - [手动部署监控](/deploy-monitoring-services.md)
+  - [升级监控组件](/upgrade-monitoring-services.md)
   - [将 Grafana 监控数据导出成快照](/exporting-grafana-snapshots.md)
   - [TiDB 集群报警规则与处理方法](/alert-rules.md)
   - [TiFlash 报警规则与处理方法](/tiflash/tiflash-alert-rules.md)
@@ -267,6 +268,7 @@
         - [错误索引的解决方案](/wrong-index-solution.md)
         - [Distinct 优化](/agg-distinct-optimization.md)
         - [代价模型](/cost-model.md)
+        - [Runtime Filter](/runtime-filter.md)
       - [Prepare 语句执行计划缓存](/sql-prepared-plan-cache.md)
       - [非 Prepare 语句执行计划缓存](/sql-non-prepared-plan-cache.md)
     - 控制执行计划
@@ -774,6 +776,7 @@
       - [`LOCK TABLES` 和 `UNLOCK TABLES`](/sql-statements/sql-statement-lock-tables-and-unlock-tables.md)
       - [`MODIFY COLUMN`](/sql-statements/sql-statement-modify-column.md)
       - [`PREPARE`](/sql-statements/sql-statement-prepare.md)
+      - [`QUERY WATCH`](/sql-statements/sql-statement-query-watch.md)
       - [`RECOVER TABLE`](/sql-statements/sql-statement-recover-table.md)
       - [`RENAME INDEX`](/sql-statements/sql-statement-rename-index.md)
       - [`RENAME TABLE`](/sql-statements/sql-statement-rename-table.md)
@@ -931,6 +934,7 @@
         - [`PROCESSLIST`](/information-schema/information-schema-processlist.md)
         - [`REFERENTIAL_CONSTRAINTS`](/information-schema/information-schema-referential-constraints.md)
         - [`RESOURCE_GROUPS`](/information-schema/information-schema-resource-groups.md)
+        - [`RUNAWAY_WATCHES`](/information-schema/information-schema-runaway-watches.md)
         - [`SCHEMATA`](/information-schema/information-schema-schemata.md)
         - [`SEQUENCES`](/information-schema/information-schema-sequences.md)
         - [`SESSION_VARIABLES`](/information-schema/information-schema-session-variables.md)
@@ -1010,6 +1014,8 @@
   - [版本发布时间线](/releases/release-timeline.md)
   - [TiDB 版本规则](/releases/versioning.md)
   - [TiDB 离线包](/binary-package.md)
+  - v7.3
+    - [7.3.0-DMR](/releases/release-7.3.0.md)
   - v7.2
     - [7.2.0-DMR](/releases/release-7.2.0.md)
   - v7.1

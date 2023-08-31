@@ -1,44 +1,30 @@
-name: Update scaffold
+name: Sync scaffold
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 */15 * *"
+    - cron: "0 0 */15 * *" # every 15 days
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  copy_files:
+
+  sync_scaffold:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-    - name: Check out destination repository (pingcap-docs-website-scaffold)
+    - name: Checkout current repo
       uses: actions/checkout@v3
-      with:
-        path: pingcap-docs-website-scaffold
 
-    - name: Check out source repository (pingcap/docs-staging)
-      uses: actions/checkout@v3
-      with:
-        repository: 'pingcap/docs-staging'
-        path: docs-staging
-
-    - name: Run copy script
+    - name: Run sync_scaffold script
       run: |
-        #!/bin/bash
-
-        src="docs-staging/markdown-pages/"
-        dest="pingcap-docs-website-scaffold/markdown-pages/"
-
-        rsync -av --delete --checksum --include='*/' --include='TOC.md' --include='_index.md' --include='_docHome.md' --exclude='*' "$src" "$dest"
-
-        cp docs-staging/docs.json pingcap-docs-website-scaffold/
-    - name: Commit and push changes
-      run: |
-        cd docs-staging
-        last_commit=$(git rev-parse HEAD)
-        cd ../pingcap-docs-website-scaffold
-        git status
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add -A
-        git commit -m "Update files from https://github.com/pingcap/docs-staging/commit/$last_commit" || echo "No changes to commit"
-        git push
+        git config user.name "Docsite Preview Bot"
+        git config user.email ""
+        ./sync_scaffold.sh
+        ./.github/git_push.sh ${{ github.ref_name }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

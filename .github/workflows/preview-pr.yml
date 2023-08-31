@@ -8,12 +8,18 @@ on:
       - preview-operator/**
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  sync:
+  preview-pr:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-    - name: Check out destination repository
+    - name: Checkout current repo
       uses: actions/checkout@v3
 
     - name: Sync PR
@@ -21,6 +27,6 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
         ./sync.sh
-        git push
+        ./.github/git_push.sh ${{ github.ref_name }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

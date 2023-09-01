@@ -186,6 +186,7 @@
   - [Monitoring Framework Overview](/tidb-monitoring-framework.md)
   - [Monitoring API](/tidb-monitoring-api.md)
   - [Deploy Monitoring Services](/deploy-monitoring-services.md)
+  - [Upgrade Monitoring Services](/upgrade-monitoring-services.md)
   - [Export Grafana Snapshots](/exporting-grafana-snapshots.md)
   - [TiDB Cluster Alert Rules](/alert-rules.md)
   - [TiFlash Alert Rules](/tiflash/tiflash-alert-rules.md)
@@ -219,6 +220,8 @@
     - [Performance Tuning Overview](/performance-tuning-overview.md)
     - [Performance Analysis and Tuning](/performance-tuning-methods.md)
     - [Performance Tuning Practices for OLTP Scenarios](/performance-tuning-practices.md)
+    - [TiFlash Performance Analysis Methods](/tiflash-performance-tuning-methods.md)
+    - [TiCDC Performance Analysis Methods](/ticdc-performance-tuning-methods.md)
     - [Latency Breakdown](/latency-breakdown.md)
     - [TiDB Best Practices on Public Cloud](/best-practices-on-public-cloud.md)
   - Configuration Tuning

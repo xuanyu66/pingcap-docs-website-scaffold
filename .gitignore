@@ -145,3 +145,5 @@ website-docs
 # End of https://www.toptal.com/developers/gitignore/api/node
 
 src/
+
+temp/

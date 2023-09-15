@@ -239,11 +239,11 @@ After you push changes to GitHub repository, Vercel will trigger a preview deplo
 
     a. During the deployment, TiDB Cloud integration will automatically create a TiDB Serverless branch, of which the name is the same as the git branch name. If the TiDB Serverless branch already exists, TiDB Cloud integration will skip this step.
 
-        ![TiDB_Cloud_Branch_Check](/media/tidb-cloud/vercel/tidb-cloud-branch-check.png)
+    ![TiDB_Cloud_Branch_Check](/media/tidb-cloud/vercel/tidb-cloud-branch-check.png)
 
     b. After the TiDB Serverless branch is ready, TiDB Cloud integration will set environment variables in the preview deployment for the Vercel project.
 
-        ![Preview_Envs](/media/tidb-cloud/vercel/preview-envs.png)
+    ![Preview_Envs](/media/tidb-cloud/vercel/preview-envs.png)
 
     c. TiDB Cloud integration will also register a blocking check to wait for the TiDB Serverless branch to be ready. You can rerun the check manually.
 4. After the check is passed, you can visit the preview deployment to see the changes.

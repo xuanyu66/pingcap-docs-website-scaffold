@@ -46,6 +46,9 @@
     - Ruby
       - [mysql2](/develop/dev-guide-sample-application-ruby-mysql2.md)
       - [Rails](/develop/dev-guide-sample-application-ruby-rails.md)
+    - Serverless Driver (Beta)
+      - [TiDB Cloud Serverless Driver](/tidb-cloud/serverless-driver.md)
+      - [Configure TiDB Cloud Serverless Driver](/tidb-cloud/serverless-driver-config.md)
   - Third-Party Support
     - [Third-Party Tools Supported by TiDB](/develop/dev-guide-third-party-support.md)
     - [Known Incompatibility Issues with Third-Party Tools](/develop/dev-guide-third-party-tools-compatibility.md)
@@ -102,7 +105,7 @@
   - Manage TiDB Serverless Clusters
     - [Create a TiDB Serverless Cluster](/tidb-cloud/create-tidb-cluster-serverless.md)
     - Connect to Your TiDB Serverless Cluster
-      - [Connection Method Overview](/tidb-cloud/connect-to-tidb-cluster-serverless.md)
+      - [Connection Overview](/tidb-cloud/connect-to-tidb-cluster-serverless.md)
       - [Connect via Public Endpoint](/tidb-cloud/connect-via-standard-connection-serverless.md)
       - [Connect via Private Endpoint](/tidb-cloud/set-up-private-endpoint-connections-serverless.md)
     - Branch (Beta)
@@ -267,7 +270,9 @@
   - [Billing for Data Migration](/tidb-cloud/tidb-cloud-billing-dm.md)
 - API
   - [API Overview](/tidb-cloud/api-overview.md)
-  - [API Reference](https://docs.pingcap.com/tidbcloud/api/v1beta)
+  - API Reference
+    - [v1beta1](https://docs.pingcap.com/tidbcloud/api/v1beta1)
+    - [v1beta](https://docs.pingcap.com/tidbcloud/api/v1beta)
 - Integrations
   - [Airbyte](/tidb-cloud/integrate-tidbcloud-with-airbyte.md)
   - [Amazon AppFlow](/develop/dev-guide-aws-appflow-integration.md)

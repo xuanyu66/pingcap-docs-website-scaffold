@@ -71,7 +71,6 @@
       - [Follower Read](/develop/dev-guide-use-follower-read.md)
       - [Stale Read](/develop/dev-guide-use-stale-read.md)
     - [HTAP 查询](/develop/dev-guide-hybrid-oltp-and-olap-queries.md)
-    - [FastScan](/develop/dev-guide-use-fastscan.md)
   - 事务
     - [概览](/develop/dev-guide-transaction-overview.md)
     - [乐观事务和悲观事务](/develop/dev-guide-optimistic-and-pessimistic-transaction.md)
@@ -544,6 +543,7 @@
       - [日志过滤器](/ticdc/ticdc-filter.md)
       - [DDL 同步](/ticdc/ticdc-ddl.md)
       - [双向复制](/ticdc/ticdc-bidirectional-replication.md)
+      - [主从集群一致性读和数据校验](/ticdc/ticdc-upstream-downstream-check.md)
     - 监控告警
       - [监控指标](/ticdc/monitor-ticdc.md)
       - [报警规则](/ticdc/ticdc-alert-rules.md)
@@ -596,7 +596,6 @@
     - [概述](/sync-diff-inspector/sync-diff-inspector-overview.md)
     - [不同库名或表名的数据校验](/sync-diff-inspector/route-diff.md)
     - [分库分表场景下的数据校验](/sync-diff-inspector/shard-diff.md)
-    - [TiDB 主从集群的数据校验](/sync-diff-inspector/upstream-downstream-diff.md)
     - [基于 DM 同步场景下的数据校验](/sync-diff-inspector/dm-diff.md)
   - TiUniManager
     - [概述](/tiunimanager/tiunimanager-overview.md)
@@ -632,6 +631,7 @@
     - [使用 TiDB 读取 TiFlash](/tiflash/use-tidb-to-read-tiflash.md)
     - [使用 TiSpark 读取 TiFlash](/tiflash/use-tispark-to-read-tiflash.md)
     - [使用 MPP 模式](/tiflash/use-tiflash-mpp-mode.md)
+    - [使用 FastScan 功能](/tiflash/use-fastscan.md)
     - [TiFlash 支持的计算下推](/tiflash/tiflash-supported-pushdown-calculations.md)
     - [TiFlash 查询结果物化](/tiflash/tiflash-results-materialization.md)
     - [TiFlash 数据校验](/tiflash/tiflash-data-validation.md)
@@ -987,6 +987,7 @@
   - [TiDB 版本规则](/releases/versioning.md)
   - [TiDB 离线包](/binary-package.md)
   - v6.5
+    - [6.5.5](/releases/release-6.5.5.md)
     - [6.5.4](/releases/release-6.5.4.md)
     - [6.5.3](/releases/release-6.5.3.md)
     - [6.5.2](/releases/release-6.5.2.md)

@@ -1,3 +1,7 @@
+<!-- markdownlint-disable MD007 -->
+
+<!-- markdownlint-disable MD041 -->
+
 -   [ドキュメントホーム](https://docs.pingcap.com/)
 -   TiDBについて
     -   [TiDB の紹介](/overview.md)
@@ -38,8 +42,12 @@
             -   [ノードmysql2](/develop/dev-guide-sample-application-nodejs-mysql2.md)
             -   [mysql.js](/develop/dev-guide-sample-application-nodejs-mysqljs.md)
             -   [プリズマ](/develop/dev-guide-sample-application-nodejs-prisma.md)
+            -   [TypeORM](/develop/dev-guide-sample-application-nodejs-typeorm.md)
             -   [Next.js](/develop/dev-guide-sample-application-nextjs.md)
             -   [AWSラムダ](/develop/dev-guide-sample-application-aws-lambda.md)
+        -   ルビー
+            -   [mysql2](/develop/dev-guide-sample-application-ruby-mysql2.md)
+            -   [レール](/develop/dev-guide-sample-application-ruby-rails.md)
     -   TiDB に接続する
         -   [Driverまたは ORM を選択してください](/develop/dev-guide-choose-driver-or-orm.md)
         -   [TiDB に接続する](/develop/dev-guide-connect-to-tidb.md)
@@ -100,11 +108,11 @@
     -   [ソフトウェアとハ​​ードウェアの要件](/hardware-and-software-requirements.md)
     -   [環境コンフィグレーションチェックリスト](/check-before-deployment.md)
     -   クラスタトポロジの計画
-        -   [最小限のトポロジー](/minimal-deployment-topology.md)
+        -   [最小限のトポロジ](/minimal-deployment-topology.md)
         -   [TiFlashトポロジ](/tiflash-deployment-topology.md)
         -   [TiCDC トポロジ](/ticdc-deployment-topology.md)
         -   [TiDBBinlogトポロジ](/tidb-binlog-deployment-topology.md)
-        -   [TiSpark トポロジ](/tispark-deployment-topology.md)
+        -   [TiSpark トポロジー](/tispark-deployment-topology.md)
         -   [クロス DC トポロジ](/geo-distributed-deployment-topology.md)
         -   [ハイブリッド トポロジ](/hybrid-deployment-topology.md)
     -   インストールして開始する
@@ -994,6 +1002,7 @@
     -   v6.6
         -   [6.6.0-DMR](/releases/release-6.6.0.md)
     -   v6.5
+        -   [6.5.5](/releases/release-6.5.5.md)
         -   [6.5.4](/releases/release-6.5.4.md)
         -   [6.5.3](/releases/release-6.5.3.md)
         -   [6.5.2](/releases/release-6.5.2.md)

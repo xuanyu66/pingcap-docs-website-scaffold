@@ -48,6 +48,7 @@
       - [mysql2](/develop/dev-guide-sample-application-ruby-mysql2.md)
       - [Rails](/develop/dev-guide-sample-application-ruby-rails.md)
   - Connect to TiDB
+    - [JetBrains DataGrip](/develop/dev-guide-gui-datagrip.md)
     - [Choose Driver or ORM](/develop/dev-guide-choose-driver-or-orm.md)
     - [Connect to TiDB](/develop/dev-guide-connect-to-tidb.md)
     - [Connection Pools and Connection Parameters](/develop/dev-guide-connection-parameters.md)
@@ -548,6 +549,7 @@
         - [Replicate Data to Storage Services](/ticdc/ticdc-sink-to-cloud-storage.md)
       - [Manage Changefeeds](/ticdc/ticdc-manage-changefeed.md)
       - [Log Filter](/ticdc/ticdc-filter.md)
+      - [DDL Replication](/ticdc/ticdc-ddl.md)
       - [Bidirectional Replication](/ticdc/ticdc-bidirectional-replication.md)
       - [Data Integrity Validation for Single-Row Data](/ticdc/ticdc-integrity-check.md)
     - Monitor and Alert

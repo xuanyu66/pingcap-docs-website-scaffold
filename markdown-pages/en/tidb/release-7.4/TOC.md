@@ -4,7 +4,7 @@
 - [Docs Home](https://docs.pingcap.com/)
 - About TiDB
   - [TiDB Introduction](/overview.md)
-  - [TiDB 6.5 Release Notes](/releases/release-6.5.0.md)
+  - [TiDB 7.4 Release Notes](/releases/release-7.4.0.md)
   - [Features](/basic-features.md)
   - [MySQL Compatibility](/mysql-compatibility.md)
   - [TiDB Limitations](/tidb-limitations.md)
@@ -41,6 +41,7 @@
       - [node-mysql2](/develop/dev-guide-sample-application-nodejs-mysql2.md)
       - [mysql.js](/develop/dev-guide-sample-application-nodejs-mysqljs.md)
       - [Prisma](/develop/dev-guide-sample-application-nodejs-prisma.md)
+      - [Sequelize](/develop/dev-guide-sample-application-nodejs-sequelize.md)
       - [TypeORM](/develop/dev-guide-sample-application-nodejs-typeorm.md)
       - [Next.js](/develop/dev-guide-sample-application-nextjs.md)
       - [AWS Lambda](/develop/dev-guide-sample-application-aws-lambda.md)
@@ -126,6 +127,7 @@
 - Migrate
   - [Overview](/migration-overview.md)
   - [Migration Tools](/migration-tools.md)
+  - [Import Best Practices](/tidb-lightning/data-import-best-practices.md)
   - Migration Scenarios
     - [Migrate from Aurora](/migrate-aurora-to-tidb.md)
     - [Migrate MySQL of Small Datasets](/migrate-small-mysql-to-tidb.md)
@@ -151,7 +153,8 @@
   - Upgrade
     - [Use TiUP](/upgrade-tidb-using-tiup.md)
     - [Use TiDB Operator](https://docs.pingcap.com/tidb-in-kubernetes/stable/upgrade-a-tidb-cluster)
-    - [TiFlash v6.2.0 Upgrade Guide](/tiflash-620-upgrade-guide.md)
+    - [TiDB Smooth Upgrade](/smooth-upgrade-tidb.md)
+    - [TiFlash Upgrade Guide](/tiflash-upgrade-guide.md)
   - Scale
     - [Use TiUP (Recommended)](/scale-tidb-using-tiup.md)
     - [Use TiDB Operator](https://docs.pingcap.com/tidb-in-kubernetes/stable/scale-a-tidb-cluster)
@@ -175,7 +178,8 @@
       - BR Features
         - [Backup Auto-Tune](/br/br-auto-tune.md)
         - [Batch Create Table](/br/br-batch-create-table.md)
-        - [Checkpoint Backup](/br/br-checkpoint.md)
+        - [Checkpoint Backup](/br/br-checkpoint-backup.md)
+        - [Checkpoint Restore](/br/br-checkpoint-restore.md)
       - [Back up and Restore Data Using Dumpling and TiDB Lightning](/backup-and-restore-using-dumpling-lightning.md)
       - [Back Up and Restore RawKV](/br/rawkv-backup-and-restore.md)
       - [Incremental Backup and Restore](/br/br-incremental-guide.md)
@@ -184,6 +188,7 @@
     - [Primary-Secondary DR](/dr-secondary-cluster.md)
     - [Multi-Replica Cluster DR](/dr-multi-replica.md)
     - [BR-based DR](/dr-backup-restore.md)
+  - [Resource Control](/tidb-resource-control.md)
   - [Configure Time Zone](/configure-time-zone.md)
   - [Daily Checklist](/daily-check.md)
   - [Maintain TiFlash](/tiflash/maintain-tiflash.md)
@@ -271,6 +276,7 @@
         - [Partition Pruning](/partition-pruning.md)
         - [TopN and Limit Push Down](/topn-limit-push-down.md)
         - [Join Reorder](/join-reorder.md)
+        - [Derive TopN or Limit from Window Functions](/derive-topn-from-window.md)
       - Physical Optimization
         - [Overview](/sql-physical-optimization.md)
         - [Index Selection](/choose-index.md)
@@ -279,12 +285,15 @@
         - [Wrong Index Solution](/wrong-index-solution.md)
         - [Distinct Optimization](/agg-distinct-optimization.md)
         - [Cost Model](/cost-model.md)
-      - [Prepare Execution Plan Cache](/sql-prepared-plan-cache.md)
+        - [Runtime Filter](/runtime-filter.md)
+      - [Prepared Execution Plan Cache](/sql-prepared-plan-cache.md)
+      - [Non-Prepared Execution Plan Cache](/sql-non-prepared-plan-cache.md)
     - Control Execution Plans
       - [Overview](/control-execution-plan.md)
       - [Optimizer Hints](/optimizer-hints.md)
       - [SQL Plan Management](/sql-plan-management.md)
       - [The Blocklist of Optimization Rules and Expression Pushdown](/blocklist-control-plan.md)
+      - [Optimizer Fix Controls](/optimizer-fix-controls.md)
 - Tutorials
   - [Multiple Availability Zones in One Region Deployment](/multi-data-centers-in-one-city-deployment.md)
   - [Three Availability Zones in Two Regions Deployment](/three-data-centers-in-two-cities-deployment.md)
@@ -307,6 +316,7 @@
     - [Three-node Hybrid Deployment](/best-practices/three-nodes-hybrid-deployment.md)
     - [Local Read Under Three Data Centers Deployment](/best-practices/three-dc-local-read.md)
     - [Use UUIDs](/best-practices/uuid.md)
+    - [Read-Only Storage Nodes](/best-practices/readonly-nodes.md)
   - [Use Placement Rules](/configure-placement-rules.md)
   - [Use Load Base Split](/configure-load-base-split.md)
   - [Use Store Limit](/configure-store-limit.md)
@@ -539,13 +549,16 @@
       - Create Changefeeds
         - [Replicate Data to MySQL-compatible Databases](/ticdc/ticdc-sink-to-mysql.md)
         - [Replicate Data to Kafka](/ticdc/ticdc-sink-to-kafka.md)
+        - [Replicate Data to Pulsar](/ticdc/ticdc-sink-to-pulsar.md)
         - [Replicate Data to Storage Services](/ticdc/ticdc-sink-to-cloud-storage.md)
       - [Manage Changefeeds](/ticdc/ticdc-manage-changefeed.md)
       - [Log Filter](/ticdc/ticdc-filter.md)
       - [DDL Replication](/ticdc/ticdc-ddl.md)
       - [Bidirectional Replication](/ticdc/ticdc-bidirectional-replication.md)
+      - [Data Integrity Validation for Single-Row Data](/ticdc/ticdc-integrity-check.md)
     - Monitor and Alert
-      - [Monitoring Metrics](/ticdc/monitor-ticdc.md)
+      - [Monitoring Metrics Summary](/ticdc/ticdc-summary-monitor.md)
+      - [Monitoring Metrics Details](/ticdc/monitor-ticdc.md)
       - [Alert Rules](/ticdc/ticdc-alert-rules.md)
     - Reference
       - [Architecture](/ticdc/ticdc-architecture.md)
@@ -558,7 +571,9 @@
         - [TiCDC CSV Protocol](/ticdc/ticdc-csv.md)
       - [TiCDC Open API v2](/ticdc/ticdc-open-api-v2.md)
       - [TiCDC Open API v1](/ticdc/ticdc-open-api.md)
-      - [Guide for Developing a Storage Sink Consumer](/ticdc/ticdc-storage-consumer-dev-guide.md)
+      - TiCDC Data Consumption
+        - [TiCDC Row Data Checksum Verification Based on Avro](/ticdc/ticdc-avro-checksum-verification.md)
+        - [Guide for Developing a Storage Sink Consumer](/ticdc/ticdc-storage-consumer-dev-guide.md)
       - [Compatibility](/ticdc/ticdc-compatibility.md)
     - [Troubleshoot](/ticdc/troubleshoot-ticdc.md)
     - [FAQs](/ticdc/ticdc-faq.md)
@@ -607,6 +622,7 @@
     - [RocksDB Overview](/storage-engine/rocksdb-overview.md)
     - [Titan Overview](/storage-engine/titan-overview.md)
     - [Titan Configuration](/storage-engine/titan-configuration.md)
+    - [Partitioned Raft KV](/partitioned-raft-kv.md)
   - Storage Engine - TiFlash
     - [Overview](/tiflash/tiflash-overview.md)
     - [Create TiFlash Replicas](/tiflash/create-tiflash-replicas.md)
@@ -614,10 +630,14 @@
     - [Use TiSpark to Read TiFlash Replicas](/tiflash/use-tispark-to-read-tiflash.md)
     - [Use MPP Mode](/tiflash/use-tiflash-mpp-mode.md)
     - [Use FastScan](/tiflash/use-fastscan.md)
+    - [Disaggregated Storage and Compute Architecture and S3 Support](/tiflash/tiflash-disaggregated-and-s3.md)
     - [Supported Push-down Calculations](/tiflash/tiflash-supported-pushdown-calculations.md)
     - [TiFlash Query Result Materialization](/tiflash/tiflash-results-materialization.md)
+    - [TiFlash Late Materialization](/tiflash/tiflash-late-materialization.md)
+    - [Spill to Disk](/tiflash/tiflash-spill-disk.md)
     - [Data Validation](/tiflash/tiflash-data-validation.md)
     - [Compatibility](/tiflash/tiflash-compatibility.md)
+    - [Pipeline Execution Model](/tiflash/tiflash-pipeline-model.md)
   - [System Variables](/system-variables.md)
   - Configuration File Parameters
     - [tidb-server](/tidb-configuration-file.md)
@@ -642,6 +662,7 @@
     - [TiKV](/grafana-tikv-dashboard.md)
     - [TiFlash](/tiflash/monitor-tiflash.md)
     - [TiCDC](/ticdc/monitor-ticdc.md)
+    - [Resource Control](/grafana-resource-control-dashboard.md)
   - Security
     - [Enable TLS Between TiDB Clients and Servers](/enable-tls-between-clients-and-servers.md)
     - [Enable TLS Between TiDB Components](/enable-tls-between-components.md)
@@ -676,13 +697,16 @@
       - [`ADMIN CHECKSUM TABLE`](/sql-statements/sql-statement-admin-checksum-table.md)
       - [`ADMIN CHECK [TABLE|INDEX]`](/sql-statements/sql-statement-admin-check-table-index.md)
       - [`ADMIN CLEANUP`](/sql-statements/sql-statement-admin-cleanup.md)
+      - [`ADMIN PAUSE DDL`](/sql-statements/sql-statement-admin-pause-ddl.md)
       - [`ADMIN RECOVER INDEX`](/sql-statements/sql-statement-admin-recover.md)
+      - [`ADMIN RESUME DDL`](/sql-statements/sql-statement-admin-resume-ddl.md)
       - [`ADMIN SHOW DDL [JOBS|JOB QUERIES]`](/sql-statements/sql-statement-admin-show-ddl.md)
       - [`ADMIN SHOW TELEMETRY`](/sql-statements/sql-statement-admin-show-telemetry.md)
       - [`ALTER DATABASE`](/sql-statements/sql-statement-alter-database.md)
       - [`ALTER INDEX`](/sql-statements/sql-statement-alter-index.md)
       - [`ALTER INSTANCE`](/sql-statements/sql-statement-alter-instance.md)
       - [`ALTER PLACEMENT POLICY`](/sql-statements/sql-statement-alter-placement-policy.md)
+      - [`ALTER RESOURCE GROUP`](/sql-statements/sql-statement-alter-resource-group.md)
       - [`ALTER TABLE`](/sql-statements/sql-statement-alter-table.md)
       - [`ALTER TABLE COMPACT`](/sql-statements/sql-statement-alter-table-compact.md)
       - [`ALTER USER`](/sql-statements/sql-statement-alter-user.md)
@@ -690,6 +714,8 @@
       - [`BACKUP`](/sql-statements/sql-statement-backup.md)
       - [`BATCH`](/sql-statements/sql-statement-batch.md)
       - [`BEGIN`](/sql-statements/sql-statement-begin.md)
+      - [`CALIBRATE RESOURCE`](/sql-statements/sql-statement-calibrate-resource.md)
+      - [`CANCEL IMPORT JOB`](/sql-statements/sql-statement-cancel-import-job.md)
       - [`CHANGE COLUMN`](/sql-statements/sql-statement-change-column.md)
       - [`COMMIT`](/sql-statements/sql-statement-commit.md)
       - [`CHANGE DRAINER`](/sql-statements/sql-statement-change-drainer.md)
@@ -698,6 +724,7 @@
       - [`CREATE DATABASE`](/sql-statements/sql-statement-create-database.md)
       - [`CREATE INDEX`](/sql-statements/sql-statement-create-index.md)
       - [`CREATE PLACEMENT POLICY`](/sql-statements/sql-statement-create-placement-policy.md)
+      - [`CREATE RESOURCE GROUP`](/sql-statements/sql-statement-create-resource-group.md)
       - [`CREATE ROLE`](/sql-statements/sql-statement-create-role.md)
       - [`CREATE SEQUENCE`](/sql-statements/sql-statement-create-sequence.md)
       - [`CREATE TABLE LIKE`](/sql-statements/sql-statement-create-table-like.md)
@@ -714,6 +741,7 @@
       - [`DROP DATABASE`](/sql-statements/sql-statement-drop-database.md)
       - [`DROP INDEX`](/sql-statements/sql-statement-drop-index.md)
       - [`DROP PLACEMENT POLICY`](/sql-statements/sql-statement-drop-placement-policy.md)
+      - [`DROP RESOURCE GROUP`](/sql-statements/sql-statement-drop-resource-group.md)
       - [`DROP ROLE`](/sql-statements/sql-statement-drop-role.md)
       - [`DROP SEQUENCE`](/sql-statements/sql-statement-drop-sequence.md)
       - [`DROP STATS`](/sql-statements/sql-statement-drop-stats.md)
@@ -731,6 +759,7 @@
       - [`FLUSH TABLES`](/sql-statements/sql-statement-flush-tables.md)
       - [`GRANT <privileges>`](/sql-statements/sql-statement-grant-privileges.md)
       - [`GRANT <role>`](/sql-statements/sql-statement-grant-role.md)
+      - [`IMPORT INTO`](/sql-statements/sql-statement-import-into.md)
       - [`INSERT`](/sql-statements/sql-statement-insert.md)
       - [`KILL [TIDB]`](/sql-statements/sql-statement-kill.md)
       - [`LOAD DATA`](/sql-statements/sql-statement-load-data.md)
@@ -739,6 +768,7 @@
       - [`LOCK TABLES` and `UNLOCK TABLES`](/sql-statements/sql-statement-lock-tables-and-unlock-tables.md)
       - [`MODIFY COLUMN`](/sql-statements/sql-statement-modify-column.md)
       - [`PREPARE`](/sql-statements/sql-statement-prepare.md)
+      - [`QUERY WATCH`](/sql-statements/sql-statement-query-watch.md)
       - [`RECOVER TABLE`](/sql-statements/sql-statement-recover-table.md)
       - [`RENAME USER`](/sql-statements/sql-statement-rename-user.md)
       - [`RENAME INDEX`](/sql-statements/sql-statement-rename-index.md)
@@ -753,6 +783,7 @@
       - [`SET DEFAULT ROLE`](/sql-statements/sql-statement-set-default-role.md)
       - [`SET [NAMES|CHARACTER SET]`](/sql-statements/sql-statement-set-names.md)
       - [`SET PASSWORD`](/sql-statements/sql-statement-set-password.md)
+      - [`SET RESOURCE GROUP`](/sql-statements/sql-statement-set-resource-group.md)
       - [`SET ROLE`](/sql-statements/sql-statement-set-role.md)
       - [`SET TRANSACTION`](/sql-statements/sql-statement-set-transaction.md)
       - [`SET [GLOBAL|SESSION] <variable>`](/sql-statements/sql-statement-set-variable.md)
@@ -766,6 +797,7 @@
       - [`SHOW CONFIG`](/sql-statements/sql-statement-show-config.md)
       - [`SHOW CREATE DATABASE`](/sql-statements/sql-statement-show-create-database.md)
       - [`SHOW CREATE PLACEMENT POLICY`](/sql-statements/sql-statement-show-create-placement-policy.md)
+      - [`SHOW CREATE RESOURCE GROUP`](/sql-statements/sql-statement-show-create-resource-group.md)
       - [`SHOW CREATE SEQUENCE`](/sql-statements/sql-statement-show-create-sequence.md)
       - [`SHOW CREATE TABLE`](/sql-statements/sql-statement-show-create-table.md)
       - [`SHOW CREATE USER`](/sql-statements/sql-statement-show-create-user.md)
@@ -775,6 +807,7 @@
       - [`SHOW ERRORS`](/sql-statements/sql-statement-show-errors.md)
       - [`SHOW [FULL] FIELDS FROM`](/sql-statements/sql-statement-show-fields-from.md)
       - [`SHOW GRANTS`](/sql-statements/sql-statement-show-grants.md)
+      - [`SHOW IMPORT JOB`](/sql-statements/sql-statement-show-import-job.md)
       - [`SHOW INDEX [FROM|IN]`](/sql-statements/sql-statement-show-index.md)
       - [`SHOW INDEXES [FROM|IN]`](/sql-statements/sql-statement-show-indexes.md)
       - [`SHOW KEYS [FROM|IN]`](/sql-statements/sql-statement-show-keys.md)
@@ -831,6 +864,7 @@
       - [Information Functions](/functions-and-operators/information-functions.md)
       - [JSON Functions](/functions-and-operators/json-functions.md)
       - [Aggregate (GROUP BY) Functions](/functions-and-operators/aggregate-group-by-functions.md)
+      - [GROUP BY Modifiers](/functions-and-operators/group-by-modifier.md)
       - [Window Functions](/functions-and-operators/window-functions.md)
       - [Miscellaneous Functions](/functions-and-operators/miscellaneous-functions.md)
       - [Precision Math](/functions-and-operators/precision-math.md)
@@ -853,6 +887,7 @@
     - [Partitioning](/partitioned-table.md)
     - [Temporary Tables](/temporary-tables.md)
     - [Cached Tables](/cached-tables.md)
+    - [FOREIGN KEY Constraints](/foreign-key.md)
     - Character Set and Collation
       - [Overview](/character-set-and-collation.md)
       - [GBK](/character-set-gbk.md)
@@ -862,6 +897,7 @@
       - INFORMATION_SCHEMA
         - [Overview](/information-schema/information-schema.md)
         - [`ANALYZE_STATUS`](/information-schema/information-schema-analyze-status.md)
+        - [`CHECK_CONSTRAINTS`](/information-schema/information-schema-check-constraints.md)
         - [`CLIENT_ERRORS_SUMMARY_BY_HOST`](/information-schema/client-errors-summary-by-host.md)
         - [`CLIENT_ERRORS_SUMMARY_BY_USER`](/information-schema/client-errors-summary-by-user.md)
         - [`CLIENT_ERRORS_SUMMARY_GLOBAL`](/information-schema/client-errors-summary-global.md)
@@ -891,6 +927,8 @@
         - [`PLACEMENT_POLICIES`](/information-schema/information-schema-placement-policies.md)
         - [`PROCESSLIST`](/information-schema/information-schema-processlist.md)
         - [`REFERENTIAL_CONSTRAINTS`](/information-schema/information-schema-referential-constraints.md)
+        - [`RESOURCE_GROUPS`](/information-schema/information-schema-resource-groups.md)
+        - [`RUNAWAY_WATCHES`](/information-schema/information-schema-runaway-watches.md)
         - [`SCHEMATA`](/information-schema/information-schema-schemata.md)
         - [`SEQUENCES`](/information-schema/information-schema-sequences.md)
         - [`SESSION_VARIABLES`](/information-schema/information-schema-session-variables.md)
@@ -915,6 +953,9 @@
         - [`VARIABLES_INFO`](/information-schema/information-schema-variables-info.md)
         - [`VIEWS`](/information-schema/information-schema-views.md)
       - [`METRICS_SCHEMA`](/metrics-schema.md)
+      - PERFORMANCE_SCHEMA
+        - [Overview](/performance-schema/performance-schema.md)
+        - [`SESSION_CONNECT_ATTRS`](/performance-schema/performance-schema-session-connect-attrs.md)
     - [Metadata Lock](/metadata-lock.md)
   - UI
     - TiDB Dashboard
@@ -940,6 +981,7 @@
         - [Use Diagnostics](/dashboard/dashboard-diagnostics-usage.md)
       - [Monitoring Page](/dashboard/dashboard-monitoring.md)
       - [Search Logs Page](/dashboard/dashboard-log-search.md)
+      - [Resource Manager Page](/dashboard/dashboard-resource-manager.md)
       - Instance Profiling
         - [Manual Profiling](/dashboard/dashboard-profiling.md)
         - [Continuous Profiling](/dashboard/continuous-profiling.md)
@@ -951,6 +993,9 @@
   - [Error Codes](/error-codes.md)
   - [Table Filter](/table-filter.md)
   - [Schedule Replicas by Topology Labels](/schedule-replicas-by-topology-labels.md)
+  - Internal Components
+    - [TiDB Backend Task Distributed Execution Framework](/tidb-distributed-execution-framework.md)
+    - [TiDB Global Sort](/tidb-global-sort.md)
 - FAQs
   - [FAQ Summary](/faq/faq-overview.md)
   - [TiDB FAQs](/faq/tidb-faq.md)
@@ -968,6 +1013,19 @@
   - [Release Timeline](/releases/release-timeline.md)
   - [TiDB Versioning](/releases/versioning.md)
   - [TiDB Installation Packages](/binary-package.md)
+  - v7.4
+    - [7.4.0-DMR](/releases/release-7.4.0.md)
+  - v7.3
+    - [7.3.0-DMR](/releases/release-7.3.0.md)
+  - v7.2
+    - [7.2.0-DMR](/releases/release-7.2.0.md)
+  - v7.1
+    - [7.1.1](/releases/release-7.1.1.md)
+    - [7.1.0](/releases/release-7.1.0.md)
+  - v7.0
+    - [7.0.0-DMR](/releases/release-7.0.0.md)
+  - v6.6
+    - [6.6.0-DMR](/releases/release-6.6.0.md)
   - v6.5
     - [6.5.5](/releases/release-6.5.5.md)
     - [6.5.4](/releases/release-6.5.4.md)

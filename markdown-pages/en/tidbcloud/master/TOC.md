@@ -19,7 +19,9 @@
     - [Build a TiDB Serverless Cluster in TiDB Cloud](/develop/dev-guide-build-cluster-in-cloud.md)
     - [CRUD SQL in TiDB](/develop/dev-guide-tidb-crud-sql.md)
   - Connect to TiDB Cloud
-    - [JetBrains DataGrip](/develop/dev-guide-gui-datagrip.md)
+    - GUI Database Tools
+      - [JetBrains DataGrip](/develop/dev-guide-gui-datagrip.md)
+      - [DBeaver](/develop/dev-guide-gui-dbeaver.md)
     - [Choose Driver or ORM](/develop/dev-guide-choose-driver-or-orm.md)
     - Java
       - [JDBC](/develop/dev-guide-sample-application-java-jdbc.md)
@@ -41,6 +43,7 @@
       - [node-mysql2](/develop/dev-guide-sample-application-nodejs-mysql2.md)
       - [mysql.js](/develop/dev-guide-sample-application-nodejs-mysqljs.md)
       - [Prisma](/develop/dev-guide-sample-application-nodejs-prisma.md)
+      - [Sequelize](/develop/dev-guide-sample-application-nodejs-sequelize.md)
       - [TypeORM](/develop/dev-guide-sample-application-nodejs-typeorm.md)
       - [Next.js](/develop/dev-guide-sample-application-nextjs.md)
       - [AWS Lambda](/develop/dev-guide-sample-application-aws-lambda.md)

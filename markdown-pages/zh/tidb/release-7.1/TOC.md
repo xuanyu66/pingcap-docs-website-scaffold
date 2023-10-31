@@ -995,6 +995,7 @@
   - [遥测](/telemetry.md)
   - [错误码](/error-codes.md)
   - [通过拓扑 label 进行副本调度](/schedule-replicas-by-topology-labels.md)
+  - [外部存储服务的 URI 格式](/external-storage-uri.md)
   - 内部组件介绍
     - [TiDB 后端任务分布式并行执行框架](/tidb-distributed-execution-framework.md)
 - 常见问题解答 (FAQ)
@@ -1015,6 +1016,7 @@
   - [TiDB 版本规则](/releases/versioning.md)
   - [TiDB 离线包](/binary-package.md)
   - v7.1
+    - [7.1.2](/releases/release-7.1.2.md)
     - [7.1.1](/releases/release-7.1.1.md)
     - [7.1.0](/releases/release-7.1.0.md)
   - v7.0

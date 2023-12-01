@@ -4,7 +4,7 @@
 - [文档中心](https://docs.pingcap.com/zh)
 - 关于 TiDB
   - [TiDB 简介](/overview.md)
-  - [TiDB 7.3 Release Notes](/releases/release-7.3.0.md)
+  - [TiDB 7.4 Release Notes](/releases/release-7.4.0.md)
   - [功能概览](/basic-features.md)
   - [与 MySQL 的兼容性](/mysql-compatibility.md)
   - [使用限制](/tidb-limitations.md)
@@ -548,9 +548,11 @@
       - 创建 Changefeed
         - [同步数据到 MySQL 兼容的数据库](/ticdc/ticdc-sink-to-mysql.md)
         - [同步数据到 Kafka](/ticdc/ticdc-sink-to-kafka.md)
+        - [同步数据到 Pulsar](/ticdc/ticdc-sink-to-pulsar.md)
         - [同步数据到存储服务](/ticdc/ticdc-sink-to-cloud-storage.md)
       - [管理 Changefeed](/ticdc/ticdc-manage-changefeed.md)
       - [日志过滤器](/ticdc/ticdc-filter.md)
+      - [DDL 同步](/ticdc/ticdc-ddl.md)
       - [双向复制](/ticdc/ticdc-bidirectional-replication.md)
       - [单行数据正确性校验](/ticdc/ticdc-integrity-check.md)
       - [主从集群一致性读和数据校验](/ticdc/ticdc-upstream-downstream-check.md)
@@ -724,6 +726,7 @@
       - [`ALTER INDEX`](/sql-statements/sql-statement-alter-index.md)
       - [`ALTER INSTANCE`](/sql-statements/sql-statement-alter-instance.md)
       - [`ALTER PLACEMENT POLICY`](/sql-statements/sql-statement-alter-placement-policy.md)
+      - [`ALTER RANGE`](/sql-statements/sql-statement-alter-range.md)
       - [`ALTER RESOURCE GROUP`](/sql-statements/sql-statement-alter-resource-group.md)
       - [`ALTER TABLE`](/sql-statements/sql-statement-alter-table.md)
       - [`ALTER TABLE COMPACT`](/sql-statements/sql-statement-alter-table-compact.md)
@@ -882,6 +885,7 @@
       - [信息函数](/functions-and-operators/information-functions.md)
       - [JSON 函数](/functions-and-operators/json-functions.md)
       - [GROUP BY 聚合函数](/functions-and-operators/aggregate-group-by-functions.md)
+      - [GROUP BY 修饰符](/functions-and-operators/group-by-modifier.md)
       - [窗口函数](/functions-and-operators/window-functions.md)
       - [其它函数](/functions-and-operators/miscellaneous-functions.md)
       - [精度数学](/functions-and-operators/precision-math.md)
@@ -914,6 +918,7 @@
       - INFORMATION_SCHEMA
         - [概述](/information-schema/information-schema.md)
         - [`ANALYZE_STATUS`](/information-schema/information-schema-analyze-status.md)
+        - [`CHECK_CONSTRAINTS`](/information-schema/information-schema-check-constraints.md)
         - [`CLIENT_ERRORS_SUMMARY_BY_HOST`](/information-schema/client-errors-summary-by-host.md)
         - [`CLIENT_ERRORS_SUMMARY_BY_USER`](/information-schema/client-errors-summary-by-user.md)
         - [`CLIENT_ERRORS_SUMMARY_GLOBAL`](/information-schema/client-errors-summary-global.md)
@@ -1011,6 +1016,7 @@
   - [外部存储服务的 URI 格式](/external-storage-uri.md)
   - 内部组件介绍
     - [TiDB 后端任务分布式并行执行框架](/tidb-distributed-execution-framework.md)
+    - [TiDB 全局排序](/tidb-global-sort.md)
 - 常见问题解答 (FAQ)
   - [FAQ 汇总](/faq/faq-overview.md)
   - [产品 FAQ](/faq/tidb-faq.md)
@@ -1028,6 +1034,8 @@
   - [版本发布时间线](/releases/release-timeline.md)
   - [TiDB 版本规则](/releases/versioning.md)
   - [TiDB 离线包](/binary-package.md)
+  - v7.4
+    - [7.4.0-DMR](/releases/release-7.4.0.md)
   - v7.3
     - [7.3.0-DMR](/releases/release-7.3.0.md)
   - v7.2

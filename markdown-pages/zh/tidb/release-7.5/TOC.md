@@ -4,7 +4,7 @@
 - [文档中心](https://docs.pingcap.com/zh)
 - 关于 TiDB
   - [TiDB 简介](/overview.md)
-  - [TiDB 7.4 Release Notes](/releases/release-7.4.0.md)
+  - [TiDB 7.5 Release Notes](/releases/release-7.5.0.md)
   - [功能概览](/basic-features.md)
   - [与 MySQL 的兼容性](/mysql-compatibility.md)
   - [使用限制](/tidb-limitations.md)
@@ -657,6 +657,9 @@
     - [TiFlash 数据校验](/tiflash/tiflash-data-validation.md)
     - [TiFlash 兼容性说明](/tiflash/tiflash-compatibility.md)
     - [TiFlash Pipeline Model 执行模型](/tiflash/tiflash-pipeline-model.md)
+  - TiDB 分布式执行框架
+    - [TiDB 分布式执行框架介绍](/tidb-distributed-execution-framework.md)
+    - [TiDB 全局排序](/tidb-global-sort.md)
   - [系统变量](/system-variables.md)
   - 配置文件参数
     - [tidb-server](/tidb-configuration-file.md)
@@ -1014,9 +1017,6 @@
   - [错误码](/error-codes.md)
   - [通过拓扑 label 进行副本调度](/schedule-replicas-by-topology-labels.md)
   - [外部存储服务的 URI 格式](/external-storage-uri.md)
-  - 内部组件介绍
-    - [TiDB 后端任务分布式并行执行框架](/tidb-distributed-execution-framework.md)
-    - [TiDB 全局排序](/tidb-global-sort.md)
 - 常见问题解答 (FAQ)
   - [FAQ 汇总](/faq/faq-overview.md)
   - [产品 FAQ](/faq/tidb-faq.md)
@@ -1034,6 +1034,8 @@
   - [版本发布时间线](/releases/release-timeline.md)
   - [TiDB 版本规则](/releases/versioning.md)
   - [TiDB 离线包](/binary-package.md)
+  - v7.5
+    - [7.5.0](/releases/release-7.5.0.md)
   - v7.4
     - [7.4.0-DMR](/releases/release-7.4.0.md)
   - v7.3
@@ -1049,6 +1051,7 @@
   - v6.6
     - [6.6.0-DMR](/releases/release-6.6.0.md)
   - v6.5
+    - [6.5.6](/releases/release-6.5.6.md)
     - [6.5.5](/releases/release-6.5.5.md)
     - [6.5.4](/releases/release-6.5.4.md)
     - [6.5.3](/releases/release-6.5.3.md)

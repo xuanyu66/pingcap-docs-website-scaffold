@@ -610,23 +610,6 @@
     - [不同库名或表名的数据校验](/sync-diff-inspector/route-diff.md)
     - [分库分表场景下的数据校验](/sync-diff-inspector/shard-diff.md)
     - [基于 DM 同步场景下的数据校验](/sync-diff-inspector/dm-diff.md)
-  - TiUniManager
-    - [概述](/tiunimanager/tiunimanager-overview.md)
-    - [安装和运维](/tiunimanager/tiunimanager-install-and-maintain.md)
-    - [快速操作](/tiunimanager/tiunimanager-quick-start.md)
-    - 操作指南
-      - [登录与初始化](/tiunimanager/tiunimanager-login-and-initialize.md)
-      - [管理集群资源](/tiunimanager/tiunimanager-manage-host-resources.md)
-      - [管理集群](/tiunimanager/tiunimanager-manage-clusters.md)
-      - [导入与导出数据](/tiunimanager/tiunimanager-import-and-export-data.md)
-      - [管理任务](/tiunimanager/tiunimanager-manage-tasks.md)
-      - [管理系统](/tiunimanager/tiunimanager-manage-system.md)
-    - [FAQ](/tiunimanager/tiunimanager-faq.md)
-    - 发布版本历史
-      - [发布版本汇总](/tiunimanager/tiunimanager-release-notes.md)
-      - [v1.0.2](/tiunimanager/tiunimanager-release-1.0.2.md)
-      - [v1.0.1](/tiunimanager/tiunimanager-release-1.0.1.md)
-      - [v1.0.0](/tiunimanager/tiunimanager-release-1.0.0.md)
 - 参考指南
   - 架构
     - [概述](/tidb-architecture.md)
@@ -765,7 +748,7 @@
       - [`EXECUTE`](/sql-statements/sql-statement-execute.md)
       - [`EXPLAIN ANALYZE`](/sql-statements/sql-statement-explain-analyze.md)
       - [`EXPLAIN`](/sql-statements/sql-statement-explain.md)
-      - [`FLASHBACK CLUSTER TO TIMESTAMP`](/sql-statements/sql-statement-flashback-to-timestamp.md)
+      - [`FLASHBACK CLUSTER`](/sql-statements/sql-statement-flashback-cluster.md)
       - [`FLASHBACK DATABASE`](/sql-statements/sql-statement-flashback-database.md)
       - [`FLASHBACK TABLE`](/sql-statements/sql-statement-flashback-table.md)
       - [`FLUSH PRIVILEGES`](/sql-statements/sql-statement-flush-privileges.md)
@@ -1018,6 +1001,7 @@
   - [TiDB 版本规则](/releases/versioning.md)
   - [TiDB 离线包](/binary-package.md)
   - v7.1
+    - [7.1.3](/releases/release-7.1.3.md)
     - [7.1.2](/releases/release-7.1.2.md)
     - [7.1.1](/releases/release-7.1.1.md)
     - [7.1.0](/releases/release-7.1.0.md)

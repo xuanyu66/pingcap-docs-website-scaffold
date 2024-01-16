@@ -291,6 +291,7 @@
       - [Optimizer Hints](/optimizer-hints.md)
       - [SQL Plan Management](/sql-plan-management.md)
       - [The Blocklist of Optimization Rules and Expression Pushdown](/blocklist-control-plan.md)
+      - [Optimizer Fix Controls](/optimizer-fix-controls.md)
 - Tutorials
   - [Multiple Availability Zones in One Region Deployment](/multi-data-centers-in-one-city-deployment.md)
   - [Three Availability Zones in Two Regions Deployment](/three-data-centers-in-two-cities-deployment.md)
@@ -976,6 +977,7 @@
   - [TiDB Versioning](/releases/versioning.md)
   - [TiDB Installation Packages](/binary-package.md)
   - v6.5
+    - [6.5.7](/releases/release-6.5.7.md)
     - [6.5.6](/releases/release-6.5.6.md)
     - [6.5.5](/releases/release-6.5.5.md)
     - [6.5.4](/releases/release-6.5.4.md)

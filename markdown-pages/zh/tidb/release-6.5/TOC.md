@@ -278,6 +278,7 @@
       - [Optimizer Hints](/optimizer-hints.md)
       - [执行计划管理](/sql-plan-management.md)
       - [优化规则及表达式下推的黑名单](/blocklist-control-plan.md)
+      - [Optimizer Fix Controls](/optimizer-fix-controls.md)
 - 教程
   - [单区域多 AZ 部署](/multi-data-centers-in-one-city-deployment.md)
   - [双区域多 AZ 部署](/three-data-centers-in-two-cities-deployment.md)
@@ -464,9 +465,10 @@
         - [DM-worker 说明](/dm/dm-worker-intro.md)
         - [安全模式](/dm/dm-safe-mode.md)
         - [Relay Log](/dm/relay-log.md)
-        - [DDL 特殊处理说明](/dm/dm-ddl-compatible.md)
       - 运行机制
         - [DML 同步机制](/dm/dm-dml-replication-logic.md)
+        - [高可用机制](/dm/dm-high-availability.md)
+        - [DDL 特殊处理说明](/dm/dm-ddl-compatible.md)
       - 命令行
         - [DM-master & DM-worker](/dm/dm-command-line-flags.md)
       - 配置文件
@@ -972,6 +974,7 @@
   - [TiDB 版本规则](/releases/versioning.md)
   - [TiDB 离线包](/binary-package.md)
   - v6.5
+    - [6.5.7](/releases/release-6.5.7.md)
     - [6.5.6](/releases/release-6.5.6.md)
     - [6.5.5](/releases/release-6.5.5.md)
     - [6.5.4](/releases/release-6.5.4.md)

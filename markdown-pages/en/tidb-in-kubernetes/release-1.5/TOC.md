@@ -22,6 +22,7 @@
     - [Alibaba Cloud ACK](deploy-on-alibaba-cloud.md)
   - [Deploy TiDB on ARM64 Machines](deploy-cluster-on-arm64.md)
   - [Deploy TiFlash to Explore TiDB HTAP](deploy-tiflash.md)
+  - [Deploy TiProxy Load Balancer](deploy-tiproxy.md)
   - Deploy TiDB Across Multiple Kubernetes Clusters
     - [Build Multiple Interconnected AWS EKS Clusters](build-multi-aws-eks.md)
     - [Build Multiple Interconnected GKE Clusters](build-multi-gcp-gke.md)
@@ -76,12 +77,12 @@
     - Persistent Volumes
       - [Back Up Data](backup-to-pv-using-br.md)
       - [Restore Data](restore-from-pv-using-br.md)
-    - Snapshot Backup and Restore
-      - [Architecture](volume-snapshot-backup-restore.md)
-      - [Back Up Data Using EBS Snapshots](backup-to-aws-s3-by-snapshot.md)
-      - [Restore Data from EBS Snapshots](restore-from-aws-s3-by-snapshot.md)
-      - [Backup and Restore Performance](backup-restore-snapshot-perf.md)
-      - [FAQs](backup-restore-faq.md)
+    - Snapshot Backup and Restore across Multiple Kubernetes
+      - [BR Federation Architecture](br-federation-architecture.md)
+      - [Deploy BR Federation](deploy-br-federation.md)
+      - [Back Up Data Using EBS Snapshots](backup-by-ebs-snapshot-across-multiple-kubernetes.md)
+      - [Restore Data from EBS Snapshots](restore-from-ebs-snapshot-across-multiple-kubernetes.md)
+      - [FAQs](backup-restore-by-ebs-snapshot-faq.md)
   - Maintain
     - [Restart a TiDB Cluster](restart-a-tidb-cluster.md)
     - [Destroy a TiDB Cluster](destroy-a-tidb-cluster.md)
@@ -113,7 +114,7 @@
     - [Advanced StatefulSet Controller](advanced-statefulset.md)
     - [Admission Controller](enable-admission-webhook.md)
   - [Sysbench Performance Test](benchmark-sysbench.md)
-  - [API References](https://github.com/pingcap/tidb-operator/blob/v1.5.1/docs/api-references/docs.md)
+  - [API References](https://github.com/pingcap/tidb-operator/blob/v1.5.2/docs/api-references/docs.md)
   - [Cheat Sheet](cheat-sheet.md)
   - [Required RBAC Rules](tidb-operator-rbac.md)
   - Tools
@@ -125,6 +126,7 @@
   - [PingCAP Clinic Diagnostic Data](clinic-data-collection.md)
 - Release Notes
   - v1.5
+    - [1.5.2](releases/release-1.5.2.md)
     - [1.5.1](releases/release-1.5.1.md)
     - [1.5 GA](releases/release-1.5.0.md)
     - [1.5.0-beta.1](releases/release-1.5.0-beta.1.md)

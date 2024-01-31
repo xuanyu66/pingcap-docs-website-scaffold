@@ -22,6 +22,7 @@
     - [阿里云 ACK](deploy-on-alibaba-cloud.md)
   - [在 ARM64 机器上部署 TiDB 集群](deploy-cluster-on-arm64.md)
   - [部署 TiDB HTAP 存储引擎 TiFlash](deploy-tiflash.md)
+  - [部署 TiDB 负载均衡 TiProxy](deploy-tiproxy.md)
   - 跨多个 Kubernetes 集群部署 TiDB 集群
     - [构建多个网络互通的 AWS EKS 集群](build-multi-aws-eks.md)
     - [构建多个网络互通的 GKE 集群](build-multi-gcp-gke.md)
@@ -125,6 +126,7 @@
   - [PingCAP Clinic 数据采集范围说明](clinic-data-collection.md)
 - 版本发布历史
   - v1.5
+    - [1.5.2](releases/release-1.5.2.md)
     - [1.5.1](releases/release-1.5.1.md)
     - [1.5 GA](releases/release-1.5.0.md)
     - [1.5.0-beta.1](releases/release-1.5.0-beta.1.md)

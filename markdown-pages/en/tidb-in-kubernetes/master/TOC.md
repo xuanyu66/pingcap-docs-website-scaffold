@@ -22,6 +22,7 @@
     - [Alibaba Cloud ACK](deploy-on-alibaba-cloud.md)
   - [Deploy TiDB on ARM64 Machines](deploy-cluster-on-arm64.md)
   - [Deploy TiFlash to Explore TiDB HTAP](deploy-tiflash.md)
+  - [Deploy TiProxy Load Balancer](deploy-tiproxy.md)
   - Deploy TiDB Across Multiple Kubernetes Clusters
     - [Build Multiple Interconnected AWS EKS Clusters](build-multi-aws-eks.md)
     - [Build Multiple Interconnected GKE Clusters](build-multi-gcp-gke.md)
@@ -125,6 +126,7 @@
   - [PingCAP Clinic Diagnostic Data](clinic-data-collection.md)
 - Release Notes
   - v1.5
+    - [1.5.2](releases/release-1.5.2.md)
     - [1.5.1](releases/release-1.5.1.md)
     - [1.5 GA](releases/release-1.5.0.md)
     - [1.5.0-beta.1](releases/release-1.5.0-beta.1.md)

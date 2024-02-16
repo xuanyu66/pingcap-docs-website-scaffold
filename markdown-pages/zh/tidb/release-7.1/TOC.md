@@ -40,7 +40,10 @@
       - [node-mysql2](/develop/dev-guide-sample-application-nodejs-mysql2.md)
       - [mysql.js](/develop/dev-guide-sample-application-nodejs-mysqljs.md)
       - [Prisma](/develop/dev-guide-sample-application-nodejs-prisma.md)
+      - [Sequelize](/develop/dev-guide-sample-application-nodejs-sequelize.md)
       - [TypeORM](/develop/dev-guide-sample-application-nodejs-typeorm.md)
+      - [Next.js](/develop/dev-guide-sample-application-nextjs.md)
+      - [AWS Lambda](/develop/dev-guide-sample-application-aws-lambda.md)
     - Ruby
       - [mysql2](/develop/dev-guide-sample-application-ruby-mysql2.md)
       - [Rails](/develop/dev-guide-sample-application-ruby-rails.md)
@@ -1012,6 +1015,7 @@
   - v6.6
     - [6.6.0-DMR](/releases/release-6.6.0.md)
   - v6.5
+    - [6.5.8](/releases/release-6.5.8.md)
     - [6.5.7](/releases/release-6.5.7.md)
     - [6.5.6](/releases/release-6.5.6.md)
     - [6.5.5](/releases/release-6.5.5.md)

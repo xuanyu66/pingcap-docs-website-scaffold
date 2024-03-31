@@ -28,8 +28,6 @@ hide_commit: true
 
 [On Azure AKS](https://docs.pingcap.com/tidb-in-kubernetes/dev/deploy-on-azure-aks)
 
-[On Alibaba ACK](https://docs.pingcap.com/tidb-in-kubernetes/dev/deploy-on-alibaba-cloud)
-
 [On Self-managed Kubernetes](https://docs.pingcap.com/tidb-in-kubernetes/dev/deploy-on-general-kubernetes)
 
 </LearningPath>
@@ -70,7 +68,7 @@ hide_commit: true
 
 <LearningPath label="Reference" icon="cloud-dev">
 
-[API Docs](https://github.com/pingcap/tidb-operator/blob/master/docs/api-references/docs.md)
+[API Docs](https://github.com/pingcap/tidb-operator/blob/v1.6.0-beta.1/docs/api-references/docs.md)
 
 [Tools](https://docs.pingcap.com/tidb-in-kubernetes/dev/tidb-toolkit)
 

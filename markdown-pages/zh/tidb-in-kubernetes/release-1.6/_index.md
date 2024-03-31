@@ -1,7 +1,6 @@
 ---
 title: TiDB on Kubernetes 用户文档
 summary: 了解 TiDB on Kubernetes 的用户文档。
-aliases: ['/docs-cn/tidb-in-kubernetes/dev/']
 hide_sidebar: true
 hide_commit: true
 ---
@@ -27,6 +26,8 @@ hide_commit: true
 [部署到 Google Cloud GKE](https://docs.pingcap.com/zh/tidb-in-kubernetes/dev/deploy-on-gcp-gke)
 
 [部署到 Azure AKS](https://docs.pingcap.com/zh/tidb-in-kubernetes/dev/deploy-on-azure-aks)
+
+[部署到阿里云 ACK](https://docs.pingcap.com/zh/tidb-in-kubernetes/dev/deploy-on-alibaba-cloud)
 
 [部署到自托管的 Kubernetes](https://docs.pingcap.com/zh/tidb-in-kubernetes/dev/prerequisites)
 

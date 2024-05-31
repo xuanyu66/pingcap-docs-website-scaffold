@@ -4,6 +4,7 @@
 - [TiDB on Kubernetes 文档](https://docs.pingcap.com/zh/tidb-in-kubernetes/dev)
 - 关于 TiDB Operator
   - [简介](tidb-operator-overview.md)
+  - [v1.6 新特性](whats-new-in-v1.6.md)
 - [快速上手](get-started.md)
 - 部署
   - 自托管的 Kubernetes
@@ -112,7 +113,7 @@
     - [增强型 StatefulSet 控制器](advanced-statefulset.md)
     - [准入控制器](enable-admission-webhook.md)
   - [Sysbench 性能测试](benchmark-sysbench.md)
-  - [API 参考文档](https://github.com/pingcap/tidb-operator/blob/v1.6.0-beta.1/docs/api-references/docs.md)
+  - [API 参考文档](https://github.com/pingcap/tidb-operator/blob/v1.6.0/docs/api-references/docs.md)
   - [Cheat Sheet](cheat-sheet.md)
   - [TiDB Operator RBAC 规则](tidb-operator-rbac.md)
   - 工具
@@ -124,6 +125,7 @@
   - [PingCAP Clinic 数据采集范围说明](clinic-data-collection.md)
 - 版本发布历史
   - v1.6
+    - [1.6 GA](releases/release-1.6.0.md)
     - [1.6.0-beta.1](releases/release-1.6.0-beta.1.md)
   - v1.5
     - [1.5.3](releases/release-1.5.3.md)

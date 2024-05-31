@@ -263,6 +263,7 @@
     - [Basic SSO Authentication](/tidb-cloud/tidb-cloud-sso-authentication.md)
     - [Organization SSO Authentication](/tidb-cloud/tidb-cloud-org-sso-authentication.md)
     - [Identity Access Management](/tidb-cloud/manage-user-access.md)
+    - [OAuth 2.0](/tidb-cloud/oauth2.md)
   - Network Access Control
     - TiDB Serverless
       - [Connect via Private Endpoint](/tidb-cloud/set-up-private-endpoint-connections-serverless.md)
@@ -298,6 +299,7 @@
   - API Reference
     - v1beta1
       - [Billing](https://docs.pingcap.com/tidbcloud/api/v1beta1/billing)
+      - [Data Service](https://docs.pingcap.com/tidbcloud/api/v1beta1/dataservice)
       - [IAM](https://docs.pingcap.com/tidbcloud/api/v1beta1/iam)
       - [MSP](https://docs.pingcap.com/tidbcloud/api/v1beta1/msp)
     - [v1beta](https://docs.pingcap.com/tidbcloud/api/v1beta)
@@ -337,6 +339,9 @@
     - [Introduction](/tidb-distributed-execution-framework.md)
     - [TiDB Global Sort](/tidb-global-sort.md)
   - Benchmarks
+    - TiDB v8.1
+      - [TPC-C Performance Test Report](/tidb-cloud/v8.1-performance-benchmarking-with-tpcc.md)
+      - [Sysbench Performance Test Report](/tidb-cloud/v8.1-performance-benchmarking-with-sysbench.md)
     - TiDB v7.5
       - [TPC-C Performance Test Report](/tidb-cloud/v7.5-performance-benchmarking-with-tpcc.md)
       - [Sysbench Performance Test Report](/tidb-cloud/v7.5-performance-benchmarking-with-sysbench.md)

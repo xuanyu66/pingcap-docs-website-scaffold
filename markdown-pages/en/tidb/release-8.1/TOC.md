@@ -9,7 +9,7 @@
   - [MySQL Compatibility](/mysql-compatibility.md)
   - [TiDB Limitations](/tidb-limitations.md)
   - [Credits](/credits.md)
-  - [Roadmap](/tidb-roadmap.md)
+  - [Roadmap](https://docs.pingcap.com/tidb/dev/tidb-roadmap)
 - Quick Start
   - [Try Out TiDB](/quick-start-with-tidb.md)
   - [Try Out HTAP](/quick-start-with-htap.md)
@@ -521,7 +521,6 @@
       - [Release Notes](/dm/dm-release-notes.md)
   - TiDB Lightning
     - [Overview](/tidb-lightning/tidb-lightning-overview.md)
-    - [`IMPORT INTO` vs. TiDB Lightning](/tidb-lightning/import-into-vs-tidb-lightning.md)
     - [Get Started](/get-started-with-tidb-lightning.md)
     - [Deploy TiDB Lightning](/tidb-lightning/deploy-tidb-lightning.md)
     - [Target Database Requirements](/tidb-lightning/tidb-lightning-requirements.md)
@@ -719,7 +718,6 @@
       - [Expression Syntax](/expression-syntax.md)
       - [Comment Syntax](/comment-syntax.md)
     - SQL Statements
-      - [Overview](/sql-statements/sql-statement-overview.md)
       - [`ADD COLUMN`](/sql-statements/sql-statement-add-column.md)
       - [`ADD INDEX`](/sql-statements/sql-statement-add-index.md)
       - [`ADMIN`](/sql-statements/sql-statement-admin.md)

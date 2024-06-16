@@ -281,7 +281,8 @@
       - 物理优化
         - [物理优化概览](/sql-physical-optimization.md)
         - [索引的选择](/choose-index.md)
-        - [统计信息简介](/statistics.md)
+        - [常规统计信息](/statistics.md)
+        - [扩展统计信息](/extended-statistics.md)
         - [错误索引的解决方案](/wrong-index-solution.md)
         - [Distinct 优化](/agg-distinct-optimization.md)
         - [代价模型](/cost-model.md)
@@ -517,6 +518,7 @@
   - TiDB Lightning
     - [概述](/tidb-lightning/tidb-lightning-overview.md)
     - [`IMPORT INTO` 和 TiDB Lightning 对比](/tidb-lightning/import-into-vs-tidb-lightning.md)
+    - [`IMPORT INTO` 和 TiDB Lightning 与日志备份和 TiCDC 的兼容性](/tidb-lightning/tidb-lightning-compatibility-and-scenarios.md)
     - [快速上手](/get-started-with-tidb-lightning.md)
     - [部署 TiDB Lightning](/tidb-lightning/deploy-tidb-lightning.md)
     - [目标数据库要求](/tidb-lightning/tidb-lightning-requirements.md)
@@ -1059,6 +1061,7 @@
   - v7.6
     - [7.6.0-DMR](/releases/release-7.6.0.md)
   - v7.5
+    - [7.5.2](/releases/release-7.5.2.md)
     - [7.5.1](/releases/release-7.5.1.md)
     - [7.5.0](/releases/release-7.5.0.md)
   - v7.4

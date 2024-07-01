@@ -635,6 +635,7 @@
     - [基于 DM 同步场景下的数据校验](/sync-diff-inspector/dm-diff.md)
   - TiProxy
     - [概述](/tiproxy/tiproxy-overview.md)
+    - [负载均衡策略](/tiproxy/tiproxy-load-balance.md)
     - [配置文件](/tiproxy/tiproxy-configuration.md)
     - [命令行参数](/tiproxy/tiproxy-command-line-flags.md)
     - [监控指标](/tiproxy/tiproxy-grafana.md)
@@ -1083,6 +1084,7 @@
   - v6.6
     - [6.6.0-DMR](/releases/release-6.6.0.md)
   - v6.5
+    - [6.5.10](/releases/release-6.5.10.md)
     - [6.5.9](/releases/release-6.5.9.md)
     - [6.5.8](/releases/release-6.5.8.md)
     - [6.5.7](/releases/release-6.5.7.md)

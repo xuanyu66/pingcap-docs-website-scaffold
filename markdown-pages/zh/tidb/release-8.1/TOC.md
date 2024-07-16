@@ -854,7 +854,7 @@
       - [`SHOW PLACEMENT LABELS`](/sql-statements/sql-statement-show-placement-labels.md)
       - [`SHOW PLUGINS`](/sql-statements/sql-statement-show-plugins.md)
       - [`SHOW PRIVILEGES`](/sql-statements/sql-statement-show-privileges.md)
-      - [`SHOW PROCESSSLIST`](/sql-statements/sql-statement-show-processlist.md)
+      - [`SHOW PROCESSLIST`](/sql-statements/sql-statement-show-processlist.md)
       - [`SHOW PROFILES`](/sql-statements/sql-statement-show-profiles.md)
       - [`SHOW PUMP STATUS`](/sql-statements/sql-statement-show-pump-status.md)
       - [`SHOW SCHEMAS`](/sql-statements/sql-statement-show-schemas.md)
@@ -899,7 +899,14 @@
       - [加密和压缩函数](/functions-and-operators/encryption-and-compression-functions.md)
       - [锁函数](/functions-and-operators/locking-functions.md)
       - [信息函数](/functions-and-operators/information-functions.md)
-      - [JSON 函数](/functions-and-operators/json-functions.md)
+      - JSON 函数
+        - [概览](/functions-and-operators/json-functions.md)
+        - [创建 JSON 的函数](/functions-and-operators/json-functions/json-functions-create.md)
+        - [搜索 JSON 的函数](/functions-and-operators/json-functions/json-functions-search.md)
+        - [修改 JSON 的函数](/functions-and-operators/json-functions/json-functions-modify.md)
+        - [返回 JSON 的函数](/functions-and-operators/json-functions/json-functions-return.md)
+        - [JSON 效用函数](/functions-and-operators/json-functions/json-functions-utility.md)
+        - [聚合 JSON 的函数](/functions-and-operators/json-functions/json-functions-aggregate.md)
       - [GROUP BY 聚合函数](/functions-and-operators/aggregate-group-by-functions.md)
       - [GROUP BY 修饰符](/functions-and-operators/group-by-modifier.md)
       - [窗口函数](/functions-and-operators/window-functions.md)
@@ -926,7 +933,7 @@
     - [临时表](/temporary-tables.md)
     - [缓存表](/cached-tables.md)
     - [外键约束](/foreign-key.md)
-    - 字符集和排序
+    - 字符集和排序规则
       - [概述](/character-set-and-collation.md)
       - [GBK](/character-set-gbk.md)
     - [Placement Rules in SQL](/placement-rules-in-sql.md)

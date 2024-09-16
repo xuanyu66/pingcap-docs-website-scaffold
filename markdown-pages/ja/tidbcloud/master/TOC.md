@@ -4,7 +4,7 @@
 
 -   [ドキュメントホーム](https://docs.pingcap.com/)
 -   TiDB Cloudについて
-    -   [TiDB Cloud理由](/tidb-cloud/tidb-cloud-intro.md)
+    -   [TiDB Cloudとは](/tidb-cloud/tidb-cloud-intro.md)
     -   [アーキテクチャ](/tidb-cloud/tidb-cloud-intro.md#architecture)
     -   [高可用性](/tidb-cloud/high-availability-with-multi-az.md)
     -   [MySQL 互換性](/mysql-compatibility.md)
@@ -18,7 +18,7 @@
 -   アプリケーションの開発
     -   [概要](/develop/dev-guide-overview.md)
     -   クイックスタート
-        -   [TiDB Cloudで TiDB サーバーレスクラスタを構築する](/develop/dev-guide-build-cluster-in-cloud.md)
+        -   [TiDB Cloudサーバーレスクラスタを構築する](/develop/dev-guide-build-cluster-in-cloud.md)
         -   [TiDB の CRUD SQL](/develop/dev-guide-tidb-crud-sql.md)
     -   TiDB Cloudに接続する
         -   GUI データベース ツール
@@ -117,9 +117,9 @@
         -   [Cluster Tierを選択](/tidb-cloud/select-cluster-tier.md)
         -   [TiDBのサイズを決定する](/tidb-cloud/size-your-cluster.md)
         -   [TiDB Cloudパフォーマンス リファレンス](/tidb-cloud/tidb-cloud-performance-reference.md)
-    -   TiDB サーバーレス クラスターの管理
-        -   [TiDB サーバーレスクラスタを作成する](/tidb-cloud/create-tidb-cluster-serverless.md)
-        -   TiDB サーバーレスクラスタに接続する
+    -   TiDB Cloudサーバーレス クラスターの管理
+        -   [TiDB Cloudサーバーレスクラスタを作成する](/tidb-cloud/create-tidb-cluster-serverless.md)
+        -   TiDB Cloudサーバーレスクラスタに接続する
             -   [接続の概要](/tidb-cloud/connect-to-tidb-cluster-serverless.md)
             -   [パブリックエンドポイント経由で接続](/tidb-cloud/connect-via-standard-connection-serverless.md)
             -   [プライベートエンドポイント経由で接続](/tidb-cloud/set-up-private-endpoint-connections-serverless.md)
@@ -128,20 +128,20 @@
             -   [ブランチの管理](/tidb-cloud/branch-manage.md)
             -   [GitHub 統合](/tidb-cloud/branch-github-integration.md)
         -   [支出限度額の管理](/tidb-cloud/manage-serverless-spend-limit.md)
-        -   [TiDB サーバーレス データのバックアップと復元](/tidb-cloud/backup-and-restore-serverless.md)
-        -   [TiDB Serverless からデータをエクスポート](/tidb-cloud/serverless-export.md)
-    -   TiDB専用クラスタの管理
-        -   [TiDB専用クラスタを作成する](/tidb-cloud/create-tidb-cluster.md)
-        -   TiDB専用クラスタに接続する
+        -   [TiDB Cloudサーバーレス データのバックアップと復元](/tidb-cloud/backup-and-restore-serverless.md)
+        -   [TiDB Cloud Serverless からデータをエクスポート](/tidb-cloud/serverless-export.md)
+    -   TiDB Cloud専用クラスタの管理
+        -   [TiDB Cloud専用クラスタを作成する](/tidb-cloud/create-tidb-cluster.md)
+        -   TiDB Cloud専用クラスタに接続する
             -   [接続方法の概要](/tidb-cloud/connect-to-tidb-cluster.md)
-            -   [標準接続で接続する](/tidb-cloud/connect-via-standard-connection.md)
+            -   [パブリック接続経由で接続](/tidb-cloud/connect-via-standard-connection.md)
             -   [AWS のプライベートエンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections.md)
             -   [プライベートエンドポイント（プライベートサービス接続）経由で Google Cloud に接続する](/tidb-cloud/set-up-private-endpoint-connections-on-google-cloud.md)
             -   [VPCピアリング経由で接続](/tidb-cloud/set-up-vpc-peering-connections.md)
             -   [SQL シェル経由で接続する](/tidb-cloud/connect-via-sql-shell.md)
-        -   [TiDB専用クラスタをスケールする](/tidb-cloud/scale-tidb-cluster.md)
-        -   [TiDB専用データのバックアップと復元](/tidb-cloud/backup-and-restore.md)
-        -   [TiDB 専用クラスタを一時停止または再開する](/tidb-cloud/pause-or-resume-tidb-cluster.md)
+        -   [TiDB Cloud専用クラスタのスケーリング](/tidb-cloud/scale-tidb-cluster.md)
+        -   [TiDB Cloud専用データのバックアップと復元](/tidb-cloud/backup-and-restore.md)
+        -   [TiDB Cloud専用クラスタを一時停止または再開する](/tidb-cloud/pause-or-resume-tidb-cluster.md)
         -   [メンテナンスウィンドウの設定](/tidb-cloud/configure-maintenance-window.md)
     -   TiFlashでHTAPクラスタを使用する
         -   [TiFlashの概要](/tiflash/tiflash-overview.md)
@@ -205,7 +205,7 @@
                 -   [準備されていない実行プランのキャッシュ](/sql-non-prepared-plan-cache.md)
             -   制御実行計画
                 -   [概要](/control-execution-plan.md)
-                -   [オプティマイザーのヒント](/optimizer-hints.md)
+                -   [オプティマイザのヒント](/optimizer-hints.md)
                 -   [SQL プラン管理](/sql-plan-management.md)
                 -   [最適化ルールのブロックリストと式のプッシュダウン](/blocklist-control-plan.md)
                 -   [オプティマイザー修正コントロール](/optimizer-fix-controls.md)
@@ -233,7 +233,8 @@
         -   [Amazon S3 または GCS から Apache Parquet ファイルをインポートする](/tidb-cloud/import-parquet-files.md)
         -   [MySQL CLI によるインポート](/tidb-cloud/import-with-mysql-cli.md)
     -   参照
-        -   [Amazon S3 アクセスと GCS アクセスを構成する](/tidb-cloud/config-s3-and-gcs-access.md)
+        -   [TiDB専用外部ストレージアクセスを構成する](/tidb-cloud/config-s3-and-gcs-access.md)
+        -   [TiDB Serverless の外部ストレージ アクセスを構成する](/tidb-cloud/serverless-external-storage.md)
         -   [データインポートの命名規則](/tidb-cloud/naming-conventions-for-data-import.md)
         -   [データをインポートするための CSV 構成](/tidb-cloud/csv-config-for-import-data.md)
         -   [Amazon S3 からのデータインポート中に発生するアクセス拒否エラーのトラブルシューティング](/tidb-cloud/troubleshoot-import-access-denied-error.md)
@@ -261,7 +262,7 @@
         -   [ベクトルデータ型](/tidb-cloud/vector-search-data-types.md)
         -   [ベクトル関数と演算子](/tidb-cloud/vector-search-functions-and-operators.md)
         -   [ベクトルインデックス](/tidb-cloud/vector-search-index.md)
-    -   [性能を上げる](/tidb-cloud/vector-search-improve-performance.md)
+    -   [パフォーマンスの向上](/tidb-cloud/vector-search-improve-performance.md)
     -   [制限事項](/tidb-cloud/vector-search-limitations.md)
     -   [変更履歴](/tidb-cloud/vector-search-changelogs.md)
 -   データ サービス (ベータ版)
@@ -287,7 +288,7 @@
     -   [カフカシンクへ](/tidb-cloud/changefeed-sink-to-apache-kafka.md)
     -   [TiDB Cloudシンクへ](/tidb-cloud/changefeed-sink-to-tidb-cloud.md)
     -   [クラウドストレージへ](/tidb-cloud/changefeed-sink-to-cloud-storage.md)
--   災害からの回復
+-   災害復旧
     -   [リカバリーグループの概要](/tidb-cloud/recovery-group-overview.md)
     -   [始める](/tidb-cloud/recovery-group-get-started.md)
     -   [データベースのフェイルオーバーと再保護](/tidb-cloud/recovery-group-failover.md)
@@ -300,25 +301,25 @@
         -   [アイデンティティアクセス管理](/tidb-cloud/manage-user-access.md)
         -   [OAuth2.0 とは](/tidb-cloud/oauth2.md)
     -   ネットワークアクセス制御
-        -   TiDB サーバーレス
+        -   TiDB Cloudサーバーレス
             -   [プライベートエンドポイント経由で接続](/tidb-cloud/set-up-private-endpoint-connections-serverless.md)
-            -   [TiDB サーバーレスへの TLS 接続](/tidb-cloud/secure-connections-to-serverless-clusters.md)
-        -   TiDB専用
+            -   [TiDB Cloud ServerlessへのTLS接続](/tidb-cloud/secure-connections-to-serverless-clusters.md)
+        -   TiDB Cloud専用
             -   [IPアクセスリストを構成する](/tidb-cloud/configure-ip-access-list.md)
             -   [AWS のプライベートエンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections.md)
             -   [プライベートエンドポイント（プライベートサービス接続）経由で Google Cloud に接続する](/tidb-cloud/set-up-private-endpoint-connections-on-google-cloud.md)
             -   [VPCピアリング経由で接続](/tidb-cloud/set-up-vpc-peering-connections.md)
-            -   [TiDB専用へのTLS接続](/tidb-cloud/tidb-cloud-tls-connect-to-dedicated.md)
+            -   [TiDB Cloud専用へのTLS接続](/tidb-cloud/tidb-cloud-tls-connect-to-dedicated.md)
     -   データアクセス制御
         -   [顧客管理の暗号化キーを使用した保存時の暗号化](/tidb-cloud/tidb-cloud-encrypt-cmek.md)
     -   データベースアクセス制御
-        -   [クラスタのSecurity設定を構成する](/tidb-cloud/configure-security-settings.md)
+        -   [クラスタパスワード設定を構成する](/tidb-cloud/configure-security-settings.md)
     -   監査管理
         -   [データベース監査ログ](/tidb-cloud/tidb-cloud-auditing.md)
         -   [コンソール監査ログ](/tidb-cloud/tidb-cloud-console-auditing.md)
 -   請求する
     -   [請求書](/tidb-cloud/tidb-cloud-billing.md#invoices)
-    -   [支払明細](/tidb-cloud/tidb-cloud-billing.md#billing-details)
+    -   [請求の詳細](/tidb-cloud/tidb-cloud-billing.md#billing-details)
     -   [コストエクスプローラー](/tidb-cloud/tidb-cloud-billing.md#cost-explorer)
     -   [請求プロファイル](/tidb-cloud/tidb-cloud-billing.md#billing-profile)
     -   [クレジット](/tidb-cloud/tidb-cloud-billing.md#credits)
@@ -328,9 +329,10 @@
     -   [データ移行の請求](/tidb-cloud/tidb-cloud-billing-dm.md)
     -   [リカバリグループの請求](/tidb-cloud/tidb-cloud-billing-recovery-group.md)
     -   [予算を管理する](/tidb-cloud/tidb-cloud-budget.md)
--   マネージド サービス プロバイダー プログラム
-    -   [マネージドサービスプロバイダー](/tidb-cloud/managed-service-provider.md)
+-   TiDB Cloudパートナー Web コンソール
+    -   [TiDB Cloudパートナー](/tidb-cloud/tidb-cloud-partners.md)
     -   [MSP 顧客](/tidb-cloud/managed-service-provider-customer.md)
+    -   [再販業者の顧客](/tidb-cloud/cppo-customer.md)
 -   翻訳
     -   [APIの概要](/tidb-cloud/api-overview.md)
     -   APIリファレンス
@@ -368,8 +370,8 @@
         -   [コンピューティング](/tidb-computing.md)
         -   [スケジュール](/tidb-scheduling.md)
         -   [TSO](/tso.md)
-    -   [TiDB 専用制限とクォータ](/tidb-cloud/limitations-and-quotas.md)
-    -   [TiDB サーバーレスの制限](/tidb-cloud/serverless-limitations.md)
+    -   [TiDB Cloud専用制限とクォータ](/tidb-cloud/limitations-and-quotas.md)
+    -   [TiDB Cloudサーバーレスの制限](/tidb-cloud/serverless-limitations.md)
     -   [TiDB Cloudの SQL 機能が制限されている](/tidb-cloud/limited-sql-features.md)
     -   [TiDB の制限](/tidb-limitations.md)
     -   TiDB 分散実行フレームワーク (DXF)
@@ -392,7 +394,7 @@
         -   [TiDB で SQL を探索する](/basic-sql-operations.md)
         -   SQL 言語の構造と構文
             -   属性
-                -   [自動増加](/auto-increment.md)
+                -   [自動インクリメント](/auto-increment.md)
                 -   [自動ランダム](/auto-random.md)
                 -   [シャード行IDビット](/shard-row-id-bits.md)
             -   [リテラル値](/literal-values.md)
@@ -552,7 +554,7 @@
             -   [概要](/data-type-overview.md)
             -   [デフォルト値](/data-type-default-values.md)
             -   [数値型](/data-type-numeric.md)
-            -   [日付と時刻の種類](/data-type-date-and-time.md)
+            -   [日付と時刻の型](/data-type-date-and-time.md)
             -   [文字列型](/data-type-string.md)
             -   [JSON型](/data-type-json.md)
         -   関数と演算子
@@ -723,7 +725,7 @@
     -   [用語集](/tidb-cloud/tidb-cloud-glossary.md)
 -   よくある質問
     -   [TiDB Cloudに関するよくある質問](/tidb-cloud/tidb-cloud-faq.md)
-    -   [TiDB サーバーレスに関するよくある質問](/tidb-cloud/serverless-faqs.md)
+    -   [TiDB Cloudサーバーレスに関するよくある質問](/tidb-cloud/serverless-faqs.md)
 -   リリースノート
     -   [2024](/tidb-cloud/tidb-cloud-release-notes.md)
     -   [2023](/tidb-cloud/release-notes-2023.md)
@@ -731,10 +733,11 @@
     -   [2021](/tidb-cloud/release-notes-2021.md)
     -   [2020](/tidb-cloud/release-notes-2020.md)
 -   メンテナンス通知
+    -   [[2024-09-15] TiDB Cloudコンソールメンテナンス通知](/tidb-cloud/notification-2024-09-15-console-maintenance.md)
     -   [[2024-04-18] TiDB Cloudデータ移行 (DM) 機能メンテナンス通知](/tidb-cloud/notification-2024-04-18-dm-feature-maintenance.md)
     -   [[2024-04-16] TiDB Cloud監視機能メンテナンス通知](/tidb-cloud/notification-2024-04-16-monitoring-features-maintenance.md)
     -   [[2024-04-11] TiDB Cloudデータ移行 (DM) 機能メンテナンス通知](/tidb-cloud/notification-2024-04-11-dm-feature-maintenance.md)
     -   [[2024-04-09] TiDB Cloud監視機能メンテナンス通知](/tidb-cloud/notification-2024-04-09-monitoring-features-maintenance.md)
-    -   [[2023-11-14] TiDB専用スケール機能メンテナンスのお知らせ](/tidb-cloud/notification-2023-11-14-scale-feature-maintenance.md)
+    -   [[2023-11-14] TiDB Cloud専用スケール機能メンテナンスのお知らせ](/tidb-cloud/notification-2023-11-14-scale-feature-maintenance.md)
     -   [[2023-09-26] TiDB Cloudコンソールメンテナンス通知](/tidb-cloud/notification-2023-09-26-console-maintenance.md)
     -   [[2023-08-31] TiDB Cloudコンソールメンテナンス通知](/tidb-cloud/notification-2023-08-31-console-maintenance.md)

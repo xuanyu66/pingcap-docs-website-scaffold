@@ -81,6 +81,24 @@
       - [Follower Read](/develop/dev-guide-use-follower-read.md)
       - [Stale Read](/develop/dev-guide-use-stale-read.md)
     - [HTAP Queries](/develop/dev-guide-hybrid-oltp-and-olap-queries.md)
+  - Vector Search
+    - [Overview](/vector-search-overview.md)
+    - Get Started
+      - [Get Started with SQL](/vector-search-get-started-using-sql.md)
+      - [Get Started with Python](/vector-search-get-started-using-python.md)
+    - Integrations
+      - [Overview](/vector-search-integration-overview.md)
+      - AI Frameworks
+        - [LlamaIndex](/vector-search-integrate-with-llamaindex.md)
+        - [Langchain](/vector-search-integrate-with-langchain.md)
+      - Embedding Models/Services
+        - [Jina AI](/vector-search-integrate-with-jinaai-embedding.md)
+      - ORM Libraries
+        - [SQLAlchemy](/vector-search-integrate-with-sqlalchemy.md)
+        - [peewee](/vector-search-integrate-with-peewee.md)
+        - [Django](/vector-search-integrate-with-django-orm.md)
+    - [Improve Performance](/vector-search-improve-performance.md)
+    - [Limitations](/vector-search-limitations.md)
   - Transaction
     - [Overview](/develop/dev-guide-transaction-overview.md)
     - [Optimistic and Pessimistic Transactions](/develop/dev-guide-optimistic-and-pessimistic-transaction.md)
@@ -626,6 +644,7 @@
   - TiProxy
     - [Overview](/tiproxy/tiproxy-overview.md)
     - [Load Balancing Policies](/tiproxy/tiproxy-load-balance.md)
+    - [Traffic Replay](/tiproxy/tiproxy-traffic-replay.md)
     - [Configuration](/tiproxy/tiproxy-configuration.md)
     - [Command Line Parameters](/tiproxy/tiproxy-command-line-flags.md)
     - [Monitoring Metrics](/tiproxy/tiproxy-grafana.md)
@@ -720,7 +739,6 @@
       - [`ADMIN RESUME DDL`](/sql-statements/sql-statement-admin-resume-ddl.md)
       - [`ADMIN [SET|SHOW|UNSET] BDR ROLE`](/sql-statements/sql-statement-admin-bdr-role.md)
       - [`ADMIN SHOW DDL [JOBS|JOB QUERIES]`](/sql-statements/sql-statement-admin-show-ddl.md)
-      - [`ADMIN SHOW TELEMETRY`](/sql-statements/sql-statement-admin-show-telemetry.md)
       - [`ALTER DATABASE`](/sql-statements/sql-statement-alter-database.md)
       - [`ALTER INSTANCE`](/sql-statements/sql-statement-alter-instance.md)
       - [`ALTER PLACEMENT POLICY`](/sql-statements/sql-statement-alter-placement-policy.md)
@@ -870,6 +888,7 @@
       - [Date and Time Types](/data-type-date-and-time.md)
       - [String Types](/data-type-string.md)
       - [JSON Type](/data-type-json.md)
+      - [Vector Types](/vector-search-data-types.md)
     - Functions and Operators
       - [Overview](/functions-and-operators/functions-and-operators-overview.md)
       - [Type Conversion in Expression Evaluation](/functions-and-operators/type-conversion-in-expression-evaluation.md)
@@ -883,6 +902,7 @@
       - [Encryption and Compression Functions](/functions-and-operators/encryption-and-compression-functions.md)
       - [Locking Functions](/functions-and-operators/locking-functions.md)
       - [Information Functions](/functions-and-operators/information-functions.md)
+      - [Vector Functions and Operators](/vector-search-functions-and-operators.md)
       - JSON Functions
         - [Overview](/functions-and-operators/json-functions.md)
         - [Functions That Create JSON](/functions-and-operators/json-functions/json-functions-create.md)
@@ -903,6 +923,7 @@
       - [TiDB Specific Functions](/functions-and-operators/tidb-functions.md)
       - [Comparisons between Functions and Syntax of Oracle and TiDB](/oracle-functions-to-tidb.md)
     - [Clustered Indexes](/clustered-indexes.md)
+    - [Vector Index](/vector-search-index.md)
     - [Constraints](/constraints.md)
     - [Generated Columns](/generated-columns.md)
     - [SQL Mode](/sql-mode.md)
@@ -996,6 +1017,7 @@
         - [`schema_unused_indexes`](/sys-schema/sys-schema-unused-indexes.md)
     - [Metadata Lock](/metadata-lock.md)
     - [TiDB Accelerated Table Creation](/accelerated-table-creation.md)
+    - [Schema Cache](/schema-cache.md)
   - UI
     - TiDB Dashboard
       - [Overview](/dashboard/dashboard-intro.md)

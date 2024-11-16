@@ -4,7 +4,7 @@
 - [文档中心](https://docs.pingcap.com/zh)
 - 关于 TiDB
   - [TiDB 简介](/overview.md)
-  - [TiDB 8.3 Release Notes](/releases/release-8.3.0.md)
+  - [TiDB 8.4 Release Notes](/releases/release-8.4.0.md)
   - [功能概览](/basic-features.md)
   - [与 MySQL 的兼容性](/mysql-compatibility.md)
   - [使用限制](/tidb-limitations.md)
@@ -135,9 +135,8 @@
     - [TiSpark 部署拓扑](/tispark-deployment-topology.md)
     - [跨机房部署拓扑结构](/geo-distributed-deployment-topology.md)
     - [混合部署拓扑结构](/hybrid-deployment-topology.md)
-  - 安装与启动
-    - [使用 TiUP 部署](/production-deployment-using-tiup.md)
-    - [在 Kubernetes 上部署](/tidb-in-kubernetes.md)
+  - [使用 TiUP 部署](/production-deployment-using-tiup.md)
+  - [在 Kubernetes 上部署](/tidb-in-kubernetes.md)
   - [验证集群状态](/post-installation-check.md)
   - 测试集群性能
     - [用 Sysbench 测试 TiDB](/benchmark/benchmark-tidb-using-sysbench.md)
@@ -682,6 +681,7 @@
     - [TiFlash 延迟物化](/tiflash/tiflash-late-materialization.md)
     - [TiFlash 数据落盘](/tiflash/tiflash-spill-disk.md)
     - [TiFlash 数据校验](/tiflash/tiflash-data-validation.md)
+    - [TiFlash MinTSO 调度器](/tiflash/tiflash-mintso-scheduler.md)
     - [TiFlash 兼容性说明](/tiflash/tiflash-compatibility.md)
     - [TiFlash Pipeline Model 执行模型](/tiflash/tiflash-pipeline-model.md)
   - TiDB 分布式执行框架
@@ -1076,6 +1076,8 @@
   - [版本发布时间线](/releases/release-timeline.md)
   - [TiDB 版本规则](/releases/versioning.md)
   - [TiDB 离线包](/binary-package.md)
+  - v8.4
+    - [8.4.0-DMR](/releases/release-8.4.0.md)
   - v8.3
     - [8.3.0-DMR](/releases/release-8.3.0.md)
   - v8.2

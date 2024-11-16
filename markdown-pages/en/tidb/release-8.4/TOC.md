@@ -4,7 +4,7 @@
 - [Docs Home](https://docs.pingcap.com/)
 - About TiDB Self-Managed
   - [What is TiDB Self-Managed](/overview.md)
-  - [TiDB 8.3 Release Notes](/releases/release-8.3.0.md)
+  - [TiDB 8.4 Release Notes](/releases/release-8.4.0.md)
   - [Features](/basic-features.md)
   - [MySQL Compatibility](/mysql-compatibility.md)
   - [TiDB Limitations](/tidb-limitations.md)
@@ -677,6 +677,7 @@
     - [TiFlash Late Materialization](/tiflash/tiflash-late-materialization.md)
     - [Spill to Disk](/tiflash/tiflash-spill-disk.md)
     - [Data Validation](/tiflash/tiflash-data-validation.md)
+    - [MinTSO Scheduler](/tiflash/tiflash-mintso-scheduler.md)
     - [Compatibility](/tiflash/tiflash-compatibility.md)
     - [Pipeline Execution Model](/tiflash/tiflash-pipeline-model.md)
   - TiDB Distributed eXecution Framework (DXF)
@@ -1072,6 +1073,8 @@
   - [Release Timeline](/releases/release-timeline.md)
   - [TiDB Versioning](/releases/versioning.md)
   - [TiDB Installation Packages](/binary-package.md)
+  - v8.4
+    - [8.4.0-DMR](/releases/release-8.4.0.md)
   - v8.3
     - [8.3.0-DMR](/releases/release-8.3.0.md)
   - v8.2

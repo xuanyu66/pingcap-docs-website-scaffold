@@ -242,6 +242,7 @@
         -   [AWS DMS をTiDB Cloudクラスターに接続する](/tidb-cloud/tidb-cloud-connect-aws-dms.md)
 -   データを探索する
     -   [SQL エディターの Chat2Query (ベータ版)](/tidb-cloud/explore-data-with-chat2query.md)
+    -   [SQL プロキシ アカウント](/tidb-cloud/sql-proxy-account.md)
 -   ベクトル検索（ベータ版）
     -   [概要](/tidb-cloud/vector-search-overview.md)
     -   始める
@@ -296,7 +297,7 @@
 -   Security
     -   アイデンティティアクセス制御
         -   [パスワード認証](/tidb-cloud/tidb-cloud-password-authentication.md)
-        -   [基本的なSSO認証](/tidb-cloud/tidb-cloud-sso-authentication.md)
+        -   [標準SSO認証](/tidb-cloud/tidb-cloud-sso-authentication.md)
         -   [組織のSSO認証](/tidb-cloud/tidb-cloud-org-sso-authentication.md)
         -   [アイデンティティアクセス管理](/tidb-cloud/manage-user-access.md)
         -   [OAuth2.0 とは](/tidb-cloud/oauth2.md)
@@ -378,6 +379,10 @@
         -   [導入](/tidb-distributed-execution-framework.md)
         -   [TiDB グローバルソート](/tidb-global-sort.md)
     -   ベンチマーク
+        -   TiDB v8.5
+            -   [パフォーマンスハイライト](/tidb-cloud/v8.5-performance-highlights.md)
+            -   [TPC-C パフォーマンス テスト レポート](/tidb-cloud/v8.5-performance-benchmarking-with-tpcc.md)
+            -   [Sysbench パフォーマンス テスト レポート](/tidb-cloud/v8.5-performance-benchmarking-with-sysbench.md)
         -   TiDB v8.1
             -   [TPC-C パフォーマンス テスト レポート](/tidb-cloud/v8.1-performance-benchmarking-with-tpcc.md)
             -   [Sysbench パフォーマンス テスト レポート](/tidb-cloud/v8.1-performance-benchmarking-with-sysbench.md)

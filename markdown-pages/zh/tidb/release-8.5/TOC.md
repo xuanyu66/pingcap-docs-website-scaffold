@@ -78,23 +78,23 @@
       - [Stale Read](/develop/dev-guide-use-stale-read.md)
     - [HTAP 查询](/develop/dev-guide-hybrid-oltp-and-olap-queries.md)
   - 向量搜索
-    - [概述](/vector-search-overview.md)
+    - [概述](/vector-search/vector-search-overview.md)
     - 快速入门
-      - [使用 SQL 开始向量搜索](/vector-search-get-started-using-sql.md)
-      - [使用 Python 开始向量搜索](/vector-search-get-started-using-python.md)
+      - [使用 SQL 开始向量搜索](/vector-search/vector-search-get-started-using-sql.md)
+      - [使用 Python 开始向量搜索](/vector-search/vector-search-get-started-using-python.md)
     - 集成
-      - [集成概览](/vector-search-integration-overview.md)
+      - [集成概览](/vector-search/vector-search-integration-overview.md)
       - AI 框架
-        - [LlamaIndex](/vector-search-integrate-with-llamaindex.md)
-        - [Langchain](/vector-search-integrate-with-langchain.md)
+        - [LlamaIndex](/vector-search/vector-search-integrate-with-llamaindex.md)
+        - [Langchain](/vector-search/vector-search-integrate-with-langchain.md)
       - 嵌入模型/服务
-        - [Jina AI](/vector-search-integrate-with-jinaai-embedding.md)
+        - [Jina AI](/vector-search/vector-search-integrate-with-jinaai-embedding.md)
       - ORM 库
-        - [SQLAlchemy](/vector-search-integrate-with-sqlalchemy.md)
-        - [peewee](/vector-search-integrate-with-peewee.md)
-        - [Django](/vector-search-integrate-with-django-orm.md)
-    - [优化搜索性能](/vector-search-improve-performance.md)
-    - [使用限制](/vector-search-limitations.md)
+        - [SQLAlchemy](/vector-search/vector-search-integrate-with-sqlalchemy.md)
+        - [peewee](/vector-search/vector-search-integrate-with-peewee.md)
+        - [Django](/vector-search/vector-search-integrate-with-django-orm.md)
+    - [优化搜索性能](/vector-search/vector-search-improve-performance.md)
+    - [使用限制](/vector-search/vector-search-limitations.md)
   - 事务
     - [概览](/develop/dev-guide-transaction-overview.md)
     - [乐观事务和悲观事务](/develop/dev-guide-optimistic-and-pessimistic-transaction.md)
@@ -391,6 +391,7 @@
   - [Load Base Split 使用文档](/configure-load-base-split.md)
   - [Store Limit 使用文档](/configure-store-limit.md)
   - [DDL 执行原理及最佳实践](/ddl-introduction.md)
+  - [数据批量处理](/batch-processing.md)
   - PD 微服务使用文档
     - [PD 微服务概览](/pd-microservices.md)
     - [使用 TiUP 扩容缩容 PD 微服务节点](/scale-microservices-using-tiup.md)
@@ -689,6 +690,7 @@
     - [TiDB 分布式执行框架介绍](/tidb-distributed-execution-framework.md)
     - [TiDB 全局排序](/tidb-global-sort.md)
   - [系统变量](/system-variables.md)
+  - [系统变量索引](/system-variable-reference.md)
   - [服务器状态变量](/status-variables.md)
   - 配置文件参数
     - [tidb-server](/tidb-configuration-file.md)
@@ -895,7 +897,7 @@
       - [日期和时间类型](/data-type-date-and-time.md)
       - [字符串类型](/data-type-string.md)
       - [JSON 类型](/data-type-json.md)
-      - [向量数据类型](/vector-search-data-types.md)
+      - [向量数据类型](/vector-search/vector-search-data-types.md)
     - 函数与操作符
       - [函数与操作符概述](/functions-and-operators/functions-and-operators-overview.md)
       - [表达式求值的类型转换](/functions-and-operators/type-conversion-in-expression-evaluation.md)
@@ -909,7 +911,7 @@
       - [加密和压缩函数](/functions-and-operators/encryption-and-compression-functions.md)
       - [锁函数](/functions-and-operators/locking-functions.md)
       - [信息函数](/functions-and-operators/information-functions.md)
-      - [向量函数和操作符](/vector-search-functions-and-operators.md)
+      - [向量函数和操作符](/vector-search/vector-search-functions-and-operators.md)
       - JSON 函数
         - [概览](/functions-and-operators/json-functions.md)
         - [创建 JSON 的函数](/functions-and-operators/json-functions/json-functions-create.md)
@@ -930,7 +932,7 @@
       - [TiDB 特有的函数](/functions-and-operators/tidb-functions.md)
       - [Oracle 与 TiDB 函数和语法差异对照](/oracle-functions-to-tidb.md)
     - [聚簇索引](/clustered-indexes.md)
-    - [向量索引](/vector-search-index.md)
+    - [向量索引](/vector-search/vector-search-index.md)
     - [约束](/constraints.md)
     - [生成列](/generated-columns.md)
     - [SQL 模式](/sql-mode.md)
@@ -941,6 +943,7 @@
       - [乐观事务](/optimistic-transaction.md)
       - [悲观事务](/pessimistic-transaction.md)
       - [非事务 DML 语句](/non-transactional-dml.md)
+      - [Pipelined DML](/pipelined-dml.md)
     - [视图](/views.md)
     - [分区表](/partitioned-table.md)
     - [临时表](/temporary-tables.md)

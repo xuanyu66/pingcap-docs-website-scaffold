@@ -17,6 +17,7 @@
     -   [TiDB Cloud CLI を試してみる](/tidb-cloud/get-started-with-cli.md)
     -   [PoCを実行する](/tidb-cloud/tidb-cloud-poc.md)
 -   重要な概念
+    -   [概要](/tidb-cloud/key-concepts.md)
     -   [アーキテクチャ](/tidb-cloud/architecture-concepts.md)
     -   [データベーススキーマ](/tidb-cloud/database-schema-concepts.md)
     -   [取引](/tidb-cloud/transaction-concepts.md)
@@ -250,7 +251,7 @@
         -   [データ移行を使用して既存データと増分データを移行する](/tidb-cloud/migrate-from-mysql-using-data-migration.md)
         -   [データ移行を使用して増分データを移行する](/tidb-cloud/migrate-incremental-data-from-mysql-using-data-migration.md)
         -   [大規模データセットの MySQL シャードの移行とマージ](/tidb-cloud/migrate-sql-shards.md)
-        -   [オンプレミスの TiDB からTiDB Cloudへの移行](/tidb-cloud/migrate-from-op-tidb.md)
+        -   [TiDBセルフマネージドからTiDB Cloudへの移行](/tidb-cloud/migrate-from-op-tidb.md)
         -   [AWS DMS を使用して MySQL 互換データベースから移行する](/tidb-cloud/migrate-from-mysql-using-aws-dms.md)
         -   [AWS DMS を使用して Amazon RDS for Oracle から移行する](/tidb-cloud/migrate-from-oracle-using-aws-dms.md)
     -   TiDB Cloudにデータをインポートする
@@ -363,6 +364,7 @@
 -   統合
     -   [エアバイト](/tidb-cloud/integrate-tidbcloud-with-airbyte.md)
     -   [Amazon アプリフロー](/develop/dev-guide-aws-appflow-integration.md)
+    -   [AWS ラムダ](/tidb-cloud/integrate-tidbcloud-with-aws-lambda.md)
     -   [クラウドフレア](/tidb-cloud/integrate-tidbcloud-with-cloudflare.md)
     -   [データドッグ](/tidb-cloud/monitor-datadog-integration.md)
     -   [dbt](/tidb-cloud/integrate-tidbcloud-with-dbt.md)
@@ -788,8 +790,11 @@
     -   [DDL 実行の原則とベスト プラクティス](/ddl-introduction.md)
     -   [データとインデックス間の不整合のトラブルシューティング](/troubleshoot-data-inconsistency-errors.md)
     -   [通知](/tidb-cloud/notifications.md)
-    -   [サポート](/tidb-cloud/tidb-cloud-support.md)
     -   [用語集](/tidb-cloud/tidb-cloud-glossary.md)
+-   サポートプラン
+    -   [コネクテッドケアの概要](/tidb-cloud/connected-care-overview.md)
+    -   [コネクテッドケアの詳細](/tidb-cloud/connected-care-detail.md)
+    -   [サポートを受ける](/tidb-cloud/tidb-cloud-support.md)
 -   よくある質問
     -   [TiDB Cloudよくある質問](/tidb-cloud/tidb-cloud-faq.md)
     -   [TiDB Cloudサーバーレスに関するよくある質問](/tidb-cloud/serverless-faqs.md)

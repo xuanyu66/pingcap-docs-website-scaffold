@@ -499,7 +499,7 @@
   - TiDB Data Migration
     - [关于 Data Migration](/dm/dm-overview.md)
     - [架构简介](/dm/dm-arch.md)
-    - [快速开始](/dm/quick-start-with-dm.md)
+    - [快速上手](/dm/quick-start-with-dm.md)
     - [最佳实践](/dm/dm-best-practices.md)
     - 部署 DM 集群
       - [软硬件要求](/dm/dm-hardware-and-software-requirements.md)
@@ -1083,6 +1083,7 @@
   - [版本周期支持策略](https://cn.pingcap.com/tidb-release-support-policy/)
   - [TiDB 离线包](/binary-package.md)
   - v8.5
+    - [8.5.1](/releases/release-8.5.1.md)
     - [8.5.0](/releases/release-8.5.0.md)
   - v8.4
     - [8.4.0-DMR](/releases/release-8.4.0.md)

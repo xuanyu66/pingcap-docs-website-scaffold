@@ -223,6 +223,7 @@
     - [使用 TiUP 升级](/upgrade-tidb-using-tiup.md)
     - [使用 TiDB Operator](https://docs.pingcap.com/zh/tidb-in-kubernetes/stable/upgrade-a-tidb-cluster)
     - [平滑升级 TiDB](/smooth-upgrade-tidb.md)
+    - [迁移升级 TiDB](/tidb-upgrade-migration-guide.md)
     - [TiFlash 升级帮助](/tiflash-upgrade-guide.md)
   - 扩缩容
     - [使用 TiUP（推荐）](/scale-tidb-using-tiup.md)
@@ -368,6 +369,7 @@
       - [执行计划管理](/sql-plan-management.md)
       - [优化规则及表达式下推的黑名单](/blocklist-control-plan.md)
       - [Optimizer Fix Controls](/optimizer-fix-controls.md)
+    - [索引推荐 (Index Advisor)](/index-advisor.md)
 - 教程
   - [单区域多 AZ 部署](/multi-data-centers-in-one-city-deployment.md)
   - [双区域多 AZ 部署](/three-data-centers-in-two-cities-deployment.md)
@@ -777,6 +779,7 @@
       - [`BEGIN`](/sql-statements/sql-statement-begin.md)
       - [`CALIBRATE RESOURCE`](/sql-statements/sql-statement-calibrate-resource.md)
       - [`CANCEL IMPORT JOB`](/sql-statements/sql-statement-cancel-import-job.md)
+      - [`CANCEL TRAFFIC JOBS`](/sql-statements/sql-statement-cancel-traffic-jobs.md)
       - [`COMMIT`](/sql-statements/sql-statement-commit.md)
       - [`CREATE BINDING`](/sql-statements/sql-statement-create-binding.md)
       - [`CREATE DATABASE`](/sql-statements/sql-statement-create-database.md)
@@ -883,6 +886,7 @@
       - [`SHOW TABLE REGIONS`](/sql-statements/sql-statement-show-table-regions.md)
       - [`SHOW TABLE STATUS`](/sql-statements/sql-statement-show-table-status.md)
       - [`SHOW TABLES`](/sql-statements/sql-statement-show-tables.md)
+      - [`SHOW TRAFFIC JOBS`](/sql-statements/sql-statement-show-traffic-jobs.md)
       - [`SHOW VARIABLES`](/sql-statements/sql-statement-show-variables.md)
       - [`SHOW WARNINGS`](/sql-statements/sql-statement-show-warnings.md)
       - [`SHUTDOWN`](/sql-statements/sql-statement-shutdown.md)
@@ -890,6 +894,8 @@
       - [`START TRANSACTION`](/sql-statements/sql-statement-start-transaction.md)
       - [`TABLE`](/sql-statements/sql-statement-table.md)
       - [`TRACE`](/sql-statements/sql-statement-trace.md)
+      - [`TRAFFIC CAPTURE`](/sql-statements/sql-statement-traffic-capture.md)
+      - [`TRAFFIC REPLAY`](/sql-statements/sql-statement-traffic-replay.md)
       - [`TRUNCATE`](/sql-statements/sql-statement-truncate.md)
       - [`UNLOCK STATS`](/sql-statements/sql-statement-unlock-stats.md)
       - [`UPDATE`](/sql-statements/sql-statement-update.md)
@@ -961,6 +967,7 @@
     - 系统表
       - `mysql` Schema
         - [概述](/mysql-schema/mysql-schema.md)
+        - [`tidb_mdl_view`](/mysql-schema/mysql-schema-tidb-mdl-view.md)
         - [`user`](/mysql-schema/mysql-schema-user.md)
       - INFORMATION_SCHEMA
         - [概述](/information-schema/information-schema.md)

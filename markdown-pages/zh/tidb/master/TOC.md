@@ -188,6 +188,7 @@
     - [与 Apache Kafka 和 Apache Flink 进行数据集成](/replicate-data-to-kafka.md)
   - 参考指南
     - [TiCDC 架构设计与原理](/ticdc/ticdc-architecture.md)
+    - [TiCDC 数据同步能力详解](/ticdc/ticdc-data-replication-capabilities.md)
     - [TiCDC Server 配置参数](/ticdc/ticdc-server-config.md)
     - [TiCDC Changefeed 配置参数](/ticdc/ticdc-changefeed-config.md)
     - [TiCDC 客户端鉴权](/ticdc/ticdc-client-authentication.md)
@@ -424,7 +425,7 @@
     - [在三数据中心下就近读取数据](/best-practices/three-dc-local-read.md)
     - [使用 UUID](/best-practices/uuid.md)
     - [只读存储节点最佳实践](/best-practices/readonly-nodes.md)
-    - [SaaS 多租户场景最佳实践](/best-practices/saas-best-practices.md)
+    - [SaaS 多租户场景下处理百万张表](/best-practices/saas-best-practices.md)
   - [Placement Rules 使用文档](/configure-placement-rules.md)
   - [Load Base Split 使用文档](/configure-load-base-split.md)
   - [Store Limit 使用文档](/configure-store-limit.md)

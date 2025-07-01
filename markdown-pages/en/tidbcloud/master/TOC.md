@@ -74,6 +74,8 @@
   - Ruby
     - [mysql2](/develop/dev-guide-sample-application-ruby-mysql2.md)
     - [Rails](/develop/dev-guide-sample-application-ruby-rails.md)
+  - C#
+    - [C#](/develop/dev-guide-sample-application-cs.md)
   - [WordPress](/tidb-cloud/dev-guide-wordpress.md)
   - Serverless Driver ![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
     - [TiDB Cloud Serverless Driver](/tidb-cloud/serverless-driver.md)
@@ -363,10 +365,12 @@
       - [TLS Connections to TiDB Cloud Dedicated](/tidb-cloud/tidb-cloud-tls-connect-to-dedicated.md)
   - Data Access Control
       - [Encryption at Rest Using Customer-Managed Encryption Keys](/tidb-cloud/tidb-cloud-encrypt-cmek.md)
+      - [User-Controlled Log Redaction](/tidb-cloud/tidb-cloud-log-redaction.md)
   - Database Access Control
     - [Configure Cluster Password Settings](/tidb-cloud/configure-security-settings.md)
   - Audit Management
-    - [Database Audit Logging](/tidb-cloud/tidb-cloud-auditing.md)
+    - [TiDB Cloud Dedicated Database Audit Logging](/tidb-cloud/tidb-cloud-auditing.md)
+    - [TiDB Cloud Serverless Database Audit Logging](/tidb-cloud/serverless-audit-logging.md) ![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
     - [Console Audit Logging](/tidb-cloud/tidb-cloud-console-auditing.md)
 - Billing
   - [Invoices](/tidb-cloud/tidb-cloud-billing.md#invoices)
@@ -396,7 +400,15 @@
   - Terraform
     - [Terraform Integration Overview](/tidb-cloud/terraform-tidbcloud-provider-overview.md)
     - [Get TiDB Cloud Terraform Provider](/tidb-cloud/terraform-get-tidbcloud-provider.md)
-    - [Use Cluster Resource](/tidb-cloud/terraform-use-cluster-resource.md)
+    - [Use TiDB Cloud Dedicated Cluster Resource](/tidb-cloud/terraform-use-dedicated-cluster-resource.md)
+    - [Use TiDB Cloud Dedicated Private Endpoint Connection Resource](/tidb-cloud/terraform-use-dedicated-private-endpoint-connection-resource.md)
+    - [Use TiDB Cloud Dedicated VPC Peering Resource](/tidb-cloud/terraform-use-dedicated-vpc-peering-resource.md)
+    - [Use TiDB Cloud Dedicated Network Container Resource](/tidb-cloud/terraform-use-dedicated-network-container-resource.md)
+    - [Use TiDB Cloud Serverless Cluster Resource](/tidb-cloud/terraform-use-serverless-cluster-resource.md)
+    - [Use TiDB Cloud Serverless Branch Resource](/tidb-cloud/terraform-use-serverless-branch-resource.md)
+    - [Use TiDB Cloud Serverless Export Resource](/tidb-cloud/terraform-use-serverless-export-resource.md)
+    - [Use SQL User Resource](/tidb-cloud/terraform-use-sql-user-resource.md)
+    - [Use Cluster Resource (Deprecated)](/tidb-cloud/terraform-use-cluster-resource.md)
     - [Use Backup Resource](/tidb-cloud/terraform-use-backup-resource.md)
     - [Use Restore Resource](/tidb-cloud/terraform-use-restore-resource.md)
     - [Use Import Resource](/tidb-cloud/terraform-use-import-resource.md)
@@ -600,12 +612,13 @@
     - [Aggregate (GROUP BY) Functions](/functions-and-operators/aggregate-group-by-functions.md)
     - [GROUP BY Modifiers](/functions-and-operators/group-by-modifier.md)
     - [Window Functions](/functions-and-operators/window-functions.md)
+    - [Sequence Functions](/functions-and-operators/sequence-functions.md)
+    - [Utility Functions](/functions-and-operators/utility-functions.md)
     - [Miscellaneous Functions](/functions-and-operators/miscellaneous-functions.md)
+    - [TiDB Specific Functions](/functions-and-operators/tidb-functions.md)
     - [Precision Math](/functions-and-operators/precision-math.md)
     - [Set Operations](/functions-and-operators/set-operators.md)
-    - [Sequence Functions](/functions-and-operators/sequence-functions.md)
     - [List of Expressions for Pushdown](/functions-and-operators/expressions-pushed-down.md)
-    - [TiDB Specific Functions](/functions-and-operators/tidb-functions.md)
   - [Clustered Indexes](/clustered-indexes.md)
   - [Constraints](/constraints.md)
   - [Generated Columns](/generated-columns.md)
@@ -741,6 +754,17 @@
       - [delete](/tidb-cloud/ticloud-serverless-sql-user-delete.md)
       - [list](/tidb-cloud/ticloud-serverless-sql-user-list.md)
       - [update](/tidb-cloud/ticloud-serverless-sql-user-update.md)
+    - audit-log
+      - [config](/tidb-cloud/ticloud-auditlog-config.md)
+      - [describe](/tidb-cloud/ticloud-auditlog-describe.md)
+      - [download](/tidb-cloud/ticloud-auditlog-download.md)
+      - filter-rule
+        - [create](/tidb-cloud/ticloud-auditlog-filter-create.md)
+        - [delete](/tidb-cloud/ticloud-auditlog-filter-delete.md)
+        - [describe](/tidb-cloud/ticloud-auditlog-filter-describe.md)
+        - [list](/tidb-cloud/ticloud-auditlog-filter-list.md)
+        - [template](/tidb-cloud/ticloud-auditlog-filter-template.md)
+        - [update](/tidb-cloud/ticloud-auditlog-filter-update.md)
     - authorized-network
       - [create](/tidb-cloud/ticloud-serverless-authorized-network-create.md)
       - [delete](/tidb-cloud/ticloud-serverless-authorized-network-delete.md)

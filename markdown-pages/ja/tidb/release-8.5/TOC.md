@@ -20,7 +20,7 @@
 -   開発する
     -   [概要](/develop/dev-guide-overview.md)
     -   クイックスタート
-        -   [TiDB Cloudサーバーレスクラスタの構築](/develop/dev-guide-build-cluster-in-cloud.md)
+        -   [{{{ .starter }}}クラスタを構築する](/develop/dev-guide-build-cluster-in-cloud.md)
         -   [TiDB の CRUD SQL](/develop/dev-guide-tidb-crud-sql.md)
     -   アプリケーション例
         -   Java
@@ -49,6 +49,8 @@
         -   ルビー
             -   [MySQL2](/develop/dev-guide-sample-application-ruby-mysql2.md)
             -   [レール](/develop/dev-guide-sample-application-ruby-rails.md)
+        -   C#
+            -   [C#](/develop/dev-guide-sample-application-cs.md)
     -   TiDBに接続する
         -   GUIデータベースツール
             -   [ジェットブレインズ データグリップ](/develop/dev-guide-gui-datagrip.md)
@@ -629,7 +631,7 @@
             -   [TiCDC Changefeedフィード構成](/ticdc/ticdc-changefeed-config.md)
             -   出力プロトコル
                 -   [TiCDC Avroプロトコル](/ticdc/ticdc-avro-protocol.md)
-                -   [TiCDC Canal- JSON プロトコル](/ticdc/ticdc-canal-json.md)
+                -   [TiCDC Canal-JSON プロトコル](/ticdc/ticdc-canal-json.md)
                 -   [TiCDC CSV プロトコル](/ticdc/ticdc-csv.md)
                 -   [TiCDC デベジウムプロトコル](/ticdc/ticdc-debezium.md)
                 -   [TiCDCオープンプロトコル](/ticdc/ticdc-open-protocol.md)

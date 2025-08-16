@@ -10,10 +10,9 @@
     -   [TiDB Cloudの紹介](/tidb-cloud/tidb-cloud-intro.md)
     -   [MySQLの互換性](/mysql-compatibility.md)
 -   TiDB Cloudを使い始める
-    -   [TiDB Cloud Serverless を試してみる](/tidb-cloud/tidb-cloud-quickstart.md)
-    -   [TiDB + AIを試す](/tidb-cloud/vector-search-get-started-using-python.md)
+    -   [TiDB Cloudを試してみる](/tidb-cloud/tidb-cloud-quickstart.md)
+    -   [TiDB + AIを試す](/vector-search/vector-search-get-started-using-python.md)
     -   [HTAPを試してみる](/tidb-cloud/tidb-cloud-htap-quickstart.md)
-    -   [TiDB Cloud CLI を試す](/tidb-cloud/get-started-with-cli.md)
     -   [PoCを実行する](/tidb-cloud/tidb-cloud-poc.md)
 -   重要な概念
     -   [概要](/tidb-cloud/key-concepts.md)
@@ -24,9 +23,7 @@
     -   [AI機能](/tidb-cloud/ai-feature-concepts.md)
     -   [データサービス](/tidb-cloud/data-service-concepts.md) ![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
     -   [スケーラビリティ](/tidb-cloud/scalability-concepts.md)
-    -   高可用性
-        -   [TiDB Cloud Serverless の高可用性](/tidb-cloud/serverless-high-availability.md)
-        -   [TiDB Cloud専用における高可用性](/tidb-cloud/high-availability-with-multi-az.md)
+    -   [高可用性](/tidb-cloud/high-availability-with-multi-az.md)
     -   [監視](/tidb-cloud/monitoring-concepts.md)
     -   [データストリーミング](/tidb-cloud/data-streaming-concepts.md)
     -   [バックアップと復元](/tidb-cloud/backup-and-restore-concepts.md)
@@ -36,7 +33,7 @@
 
 -   開発クイックスタート
     -   [開発者ガイドの概要](/develop/dev-guide-overview.md)
-    -   [TiDB Cloudサーバーレスクラスタの構築](/develop/dev-guide-build-cluster-in-cloud.md)
+    -   [TiDB Cloudクラスタを構築する](/develop/dev-guide-build-cluster-in-cloud.md)
     -   [TiDB の CRUD SQL](/develop/dev-guide-tidb-crud-sql.md)
 -   TiDB Cloudに接続する
     -   GUIデータベースツール
@@ -70,20 +67,12 @@
         -   [プリズマ](/develop/dev-guide-sample-application-nodejs-prisma.md)
         -   [続編](/develop/dev-guide-sample-application-nodejs-sequelize.md)
         -   [タイプORM](/develop/dev-guide-sample-application-nodejs-typeorm.md)
-        -   [ネクスト.js](/develop/dev-guide-sample-application-nextjs.md)
-        -   [AWS ラムダ](/develop/dev-guide-sample-application-aws-lambda.md)
     -   ルビー
         -   [MySQL2](/develop/dev-guide-sample-application-ruby-mysql2.md)
         -   [レール](/develop/dev-guide-sample-application-ruby-rails.md)
     -   C#
         -   [C#](/develop/dev-guide-sample-application-cs.md)
     -   [ワードプレス](/tidb-cloud/dev-guide-wordpress.md)
-    -   サーバーレスDriver![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
-        -   [TiDB CloudサーバーレスDriver](/tidb-cloud/serverless-driver.md)
-        -   [Node.jsの例](/tidb-cloud/serverless-driver-node-example.md)
-        -   [Prismaの例](/tidb-cloud/serverless-driver-prisma-example.md)
-        -   [Kyselyの例](/tidb-cloud/serverless-driver-kysely-example.md)
-        -   [霧雨の例](/tidb-cloud/serverless-driver-drizzle-example.md)
 -   開発リファレンス
     -   データベーススキーマの設計
         -   [概要](/develop/dev-guide-schema-design-overview.md)
@@ -137,36 +126,22 @@
 
 -   クラスタの管理
     -   クラスタを計画する
-        -   [Cluster Tierを選択](/tidb-cloud/select-cluster-tier.md)
+        -   [クラスタプランを選択](/tidb-cloud/select-cluster-tier.md)
         -   [TiDBのサイズを決定する](/tidb-cloud/size-your-cluster.md)
         -   [TiDB Cloudパフォーマンス リファレンス](/tidb-cloud/tidb-cloud-performance-reference.md)
-    -   TiDB Cloudサーバーレス クラスターの管理
-        -   [TiDB Cloudサーバーレスクラスタを作成する](/tidb-cloud/create-tidb-cluster-serverless.md)
-        -   TiDB Cloudサーバーレスクラスタに接続する
-            -   [接続の概要](/tidb-cloud/connect-to-tidb-cluster-serverless.md)
-            -   [パブリックエンドポイント経由で接続](/tidb-cloud/connect-via-standard-connection-serverless.md)
-            -   [プライベートエンドポイント経由で接続](/tidb-cloud/set-up-private-endpoint-connections-serverless.md)
-        -   支店![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
-            -   [概要](/tidb-cloud/branch-overview.md)
-            -   [ブランチの管理](/tidb-cloud/branch-manage.md)
-            -   [GitHub 統合](/tidb-cloud/branch-github-integration.md)
-        -   [支出限度額の管理](/tidb-cloud/manage-serverless-spend-limit.md)
-        -   [TiDB Cloudサーバーレスデータのバックアップと復元](/tidb-cloud/backup-and-restore-serverless.md)
-        -   [TiDB Cloud Serverlessからデータをエクスポート](/tidb-cloud/serverless-export.md)
-    -   TiDB Cloud専用クラスタの管理
-        -   [TiDB Cloud専用クラスタを作成する](/tidb-cloud/create-tidb-cluster.md)
-        -   TiDB Cloud専用クラスタに接続する
-            -   [接続方法の概要](/tidb-cloud/connect-to-tidb-cluster.md)
-            -   [パブリック接続経由で接続](/tidb-cloud/connect-via-standard-connection.md)
-            -   [AWS のプライベートエンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections.md)
-            -   [Azure のプライベート エンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections-on-azure.md)
-            -   [プライベートエンドポイント経由で Google Cloud に接続する](/tidb-cloud/set-up-private-endpoint-connections-on-google-cloud.md)
-            -   [VPCピアリング経由で接続](/tidb-cloud/set-up-vpc-peering-connections.md)
-            -   [SQL シェル経由で接続する](/tidb-cloud/connect-via-sql-shell.md)
-        -   [TiDB Cloud専用クラスタのスケール](/tidb-cloud/scale-tidb-cluster.md)
-        -   [TiDB Cloud専用データのバックアップと復元](/tidb-cloud/backup-and-restore.md)
-        -   [TiDB Cloud専用クラスタを一時停止または再開する](/tidb-cloud/pause-or-resume-tidb-cluster.md)
-        -   [メンテナンスウィンドウの設定](/tidb-cloud/configure-maintenance-window.md)
+    -   [TiDB Cloud専用クラスタを作成する](/tidb-cloud/create-tidb-cluster.md)
+    -   TiDB Cloud専用クラスタに接続する
+        -   [接続方法の概要](/tidb-cloud/connect-to-tidb-cluster.md)
+        -   [パブリック接続経由で接続](/tidb-cloud/connect-via-standard-connection.md)
+        -   [AWS のプライベートエンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections.md)
+        -   [Azure のプライベート エンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections-on-azure.md)
+        -   [プライベートエンドポイント経由で Google Cloud に接続する](/tidb-cloud/set-up-private-endpoint-connections-on-google-cloud.md)
+        -   [VPCピアリング経由で接続](/tidb-cloud/set-up-vpc-peering-connections.md)
+        -   [SQL シェル経由で接続する](/tidb-cloud/connect-via-sql-shell.md)
+    -   [TiDB Cloud専用クラスタのスケール](/tidb-cloud/scale-tidb-cluster.md)
+    -   [TiDB Cloud専用データのバックアップと復元](/tidb-cloud/backup-and-restore.md)
+    -   [TiDB Cloud専用クラスタを一時停止または再開する](/tidb-cloud/pause-or-resume-tidb-cluster.md)
+    -   [メンテナンスウィンドウの設定](/tidb-cloud/configure-maintenance-window.md)
     -   TiFlashでHTAPクラスタを使用する
         -   [TiFlashの概要](/tiflash/tiflash-overview.md)
         -   [TiFlashレプリカを作成する](/tiflash/create-tiflash-replicas.md)
@@ -187,13 +162,13 @@
             -   [Slackで購読する](/tidb-cloud/monitor-alert-slack.md)
             -   [Zoomで登録する](/tidb-cloud/monitor-alert-zoom.md)
         -   [クラスタイベント](/tidb-cloud/tidb-cloud-events.md)
-        -   [サードパーティのメトリクス統合](/tidb-cloud/third-party-monitoring-integrations.md) ![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
+        -   [サードパーティのメトリクス統合](/tidb-cloud/third-party-monitoring-integrations.md)
         -   [TiDB Cloudクリニック](/tidb-cloud/tidb-cloud-clinic.md)
     -   パフォーマンスの調整
         -   [概要](/tidb-cloud/tidb-cloud-tune-performance-overview.md)
         -   パフォーマンスを分析する
-            -   [診断タブを使用する](/tidb-cloud/tune-performance.md)
-            -   [インデックスインサイトを使用する](/tidb-cloud/index-insight.md) ![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
+            -   [診断ページを使用する](/tidb-cloud/tune-performance.md)
+                -   [インデックスインサイトを使用する](/tidb-cloud/index-insight.md) ![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
             -   [使用ステートメント概要表](/statement-summary-tables.md)
         -   SQLチューニング
             -   [概要](/tidb-cloud/tidb-cloud-sql-tuning-overview.md)
@@ -238,6 +213,7 @@
                 -   [SQLプラン管理](/sql-plan-management.md)
                 -   [最適化ルールのブロックリストと式プッシュダウン](/blocklist-control-plan.md)
                 -   [オプティマイザー修正コントロール](/optimizer-fix-controls.md)
+            -   [インデックスアドバイザー](/index-advisor.md)
         -   [TiKV Follower Readの調整](/follower-read.md)
         -   [コプロセッサーキャッシュ](/coprocessor-cache.md)
         -   ガベージコレクション（GC）
@@ -245,8 +221,10 @@
             -   [コンフィグレーション](/garbage-collection-configuration.md)
         -   [TiFlash のパフォーマンスを調整する](/tiflash/tune-tiflash-performance.md)
     -   リソース割り当ての最適化
-        -   [リソース割り当ての概要](/tidb-cloud/optimize-resource-allocation.md)
-        -   [リソース管理](/tidb-resource-control.md)
+        -   リソースマネージャー
+            -   [リソース制御を使用してリソースグループの制限とフロー制御を実現する](/tidb-resource-control-ru-groups.md)
+            -   [ランナウェイクエリの管理](/tidb-resource-control-runaway-queries.md)
+            -   [バックグラウンドタスクの管理](/tidb-resource-control-background-tasks.md)
         -   TiDBノードグループ
             -   [TiDBノードグループの概要](/tidb-cloud/tidb-node-group-overview.md)
             -   [TiDBノードグループの管理](/tidb-cloud/tidb-node-group-management.md)
@@ -262,19 +240,12 @@
         -   [AWS DMS を使用して MySQL 互換データベースから移行する](/tidb-cloud/migrate-from-mysql-using-aws-dms.md)
         -   [AWS DMS を使用して Amazon RDS for Oracle から移行する](/tidb-cloud/migrate-from-oracle-using-aws-dms.md)
     -   TiDB Cloud Dedicatedへのデータのインポート
-        -   [サンプルデータのインポート](/tidb-cloud/import-sample-data.md)
+        -   [Cloud Storage からサンプルデータ (SQL ファイル) をインポートする](/tidb-cloud/import-sample-data.md)
         -   [クラウドストレージからCSVファイルをインポートする](/tidb-cloud/import-csv-files.md)
         -   [クラウドストレージからParquetファイルをインポートする](/tidb-cloud/import-parquet-files.md)
         -   [MySQL CLI によるインポート](/tidb-cloud/import-with-mysql-cli.md)
-    -   TiDB Cloud Serverless へのデータのインポート
-        -   [サンプルデータのインポート](/tidb-cloud/import-sample-data-serverless.md)
-        -   [ローカルファイルのインポート](/tidb-cloud/tidb-cloud-import-local-files.md)
-        -   [クラウドストレージからCSVファイルをインポートする](/tidb-cloud/import-csv-files-serverless.md)
-        -   [クラウドストレージからParquetファイルをインポートする](/tidb-cloud/import-parquet-files-serverless.md)
-        -   [MySQL CLI によるインポート](/tidb-cloud/import-with-mysql-cli-serverless.md)
     -   参照
         -   [TiDB Cloud Dedicatedの外部ストレージアクセスを構成する](/tidb-cloud/dedicated-external-storage.md)
-        -   [TiDB Cloud Serverless の外部ストレージアクセスを構成する](/tidb-cloud/serverless-external-storage.md)
         -   [データインポートの命名規則](/tidb-cloud/naming-conventions-for-data-import.md)
         -   [データのインポートのためのCSV構成](/tidb-cloud/csv-config-for-import-data.md)
         -   [Amazon S3 からのデータインポート中に発生するアクセス拒否エラーのトラブルシューティング](/tidb-cloud/troubleshoot-import-access-denied-error.md)
@@ -284,33 +255,29 @@
     -   [SQLエディタでのChat2Query](/tidb-cloud/explore-data-with-chat2query.md) ![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
     -   [SQL プロキシアカウント](/tidb-cloud/sql-proxy-account.md)
 -   ベクトル検索![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
-    -   [概要](/tidb-cloud/vector-search-overview.md)
+    -   [概要](/vector-search/vector-search-overview.md)
     -   始める
-        -   [SQLを始めよう](/tidb-cloud/vector-search-get-started-using-sql.md)
-        -   [Pythonを始めよう](/tidb-cloud/vector-search-get-started-using-python.md)
+        -   [SQLを始めよう](/vector-search/vector-search-get-started-using-sql.md)
+        -   [Pythonを始めよう](/vector-search/vector-search-get-started-using-python.md)
     -   統合
-        -   [概要](/tidb-cloud/vector-search-integration-overview.md)
+        -   [概要](/vector-search/vector-search-integration-overview.md)
         -   AIフレームワーク
-            -   [ラマインデックス](/tidb-cloud/vector-search-integrate-with-llamaindex.md)
-            -   [ランチェイン](/tidb-cloud/vector-search-integrate-with-langchain.md)
+            -   [ラマインデックス](/vector-search/vector-search-integrate-with-llamaindex.md)
+            -   [ランチェイン](/vector-search/vector-search-integrate-with-langchain.md)
         -   AIサービス
             -   [アマゾンの岩盤](/tidb-cloud/vector-search-integrate-with-amazon-bedrock.md)
         -   モデル/サービスの埋め込み
-            -   [ジナ・アイ](/tidb-cloud/vector-search-integrate-with-jinaai-embedding.md)
+            -   [ジナ・アイ](/vector-search/vector-search-integrate-with-jinaai-embedding.md)
         -   ORMライブラリ
-            -   [SQLアルケミー](/tidb-cloud/vector-search-integrate-with-sqlalchemy.md)
-            -   [ピーウィー](/tidb-cloud/vector-search-integrate-with-peewee.md)
-            -   [Django ORM](/tidb-cloud/vector-search-integrate-with-django-orm.md)
-    -   テキスト検索
-        -   [SQLによる全文検索](/tidb-cloud/vector-search-full-text-search-sql.md)
-        -   [Pythonによる全文検索](/tidb-cloud/vector-search-full-text-search-python.md)
-        -   [ハイブリッド検索](/tidb-cloud/vector-search-hybrid-search.md)
+            -   [SQLアルケミー](/vector-search/vector-search-integrate-with-sqlalchemy.md)
+            -   [ピーウィー](/vector-search/vector-search-integrate-with-peewee.md)
+            -   [Django ORM](/vector-search/vector-search-integrate-with-django-orm.md)
     -   参照
-        -   [ベクトルデータ型](/tidb-cloud/vector-search-data-types.md)
-        -   [ベクトル関数と演算子](/tidb-cloud/vector-search-functions-and-operators.md)
-        -   [ベクトルインデックス](/tidb-cloud/vector-search-index.md)
-    -   [パフォーマンスの向上](/tidb-cloud/vector-search-improve-performance.md)
-    -   [制限事項](/tidb-cloud/vector-search-limitations.md)
+        -   [ベクトルデータ型](/vector-search/vector-search-data-types.md)
+        -   [ベクトル関数と演算子](/vector-search/vector-search-functions-and-operators.md)
+        -   [ベクトルインデックス](/vector-search/vector-search-index.md)
+    -   [パフォーマンスの向上](/vector-search/vector-search-improve-performance.md)
+    -   [制限事項](/vector-search/vector-search-limitations.md)
     -   [変更ログ](/tidb-cloud/vector-search-changelogs.md)
 -   データサービス![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
     -   [概要](/tidb-cloud/data-service-overview.md)
@@ -353,17 +320,12 @@
         -   [アイデンティティアクセス管理](/tidb-cloud/manage-user-access.md)
         -   [OAuth 2.0](/tidb-cloud/oauth2.md)
     -   ネットワークアクセス制御
-        -   TiDB Cloudサーバーレス
-            -   [プライベートエンドポイント経由で接続](/tidb-cloud/set-up-private-endpoint-connections-serverless.md)
-            -   [パブリックエンドポイントのファイアウォールルールを構成する](/tidb-cloud/configure-serverless-firewall-rules-for-public-endpoints.md)
-            -   [TiDB Cloud ServerlessへのTLS接続](/tidb-cloud/secure-connections-to-serverless-clusters.md)
-        -   TiDB Cloud専用
-            -   [IPアクセスリストを設定する](/tidb-cloud/configure-ip-access-list.md)
-            -   [AWS のプライベートエンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections.md)
-            -   [Azure のプライベート エンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections-on-azure.md)
-            -   [プライベートエンドポイント経由で Google Cloud に接続する](/tidb-cloud/set-up-private-endpoint-connections-on-google-cloud.md)
-            -   [VPC ピアリング経由で接続](/tidb-cloud/set-up-vpc-peering-connections.md)
-            -   [TiDB Cloud専用へのTLS接続](/tidb-cloud/tidb-cloud-tls-connect-to-dedicated.md)
+        -   [IPアクセスリストを設定する](/tidb-cloud/configure-ip-access-list.md)
+        -   [AWS のプライベートエンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections.md)
+        -   [Azure のプライベート エンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections-on-azure.md)
+        -   [プライベートエンドポイント経由で Google Cloud に接続する](/tidb-cloud/set-up-private-endpoint-connections-on-google-cloud.md)
+        -   [VPC ピアリング経由で接続](/tidb-cloud/set-up-vpc-peering-connections.md)
+        -   [TiDB Cloud専用へのTLS接続](/tidb-cloud/tidb-cloud-tls-connect-to-dedicated.md)
     -   データアクセス制御
         -   [顧客管理の暗号化キーを使用した保存時の暗号化](/tidb-cloud/tidb-cloud-encrypt-cmek.md)
         -   [ユーザー制御のログ編集](/tidb-cloud/tidb-cloud-log-redaction.md)
@@ -371,7 +333,6 @@
         -   [クラスタパスワード設定を構成する](/tidb-cloud/configure-security-settings.md)
     -   監査管理
         -   [TiDB Cloud専用データベース監査ログ](/tidb-cloud/tidb-cloud-auditing.md)
-        -   [TiDB Cloudサーバーレス データベース監査ログ](/tidb-cloud/serverless-audit-logging.md) ![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
         -   [コンソール監査ログ](/tidb-cloud/tidb-cloud-console-auditing.md)
 -   請求する
     -   [請求書](/tidb-cloud/tidb-cloud-billing.md#invoices)
@@ -380,7 +341,7 @@
     -   [請求プロファイル](/tidb-cloud/tidb-cloud-billing.md#billing-profile)
     -   [クレジット](/tidb-cloud/tidb-cloud-billing.md#credits)
     -   [支払い方法の設定](/tidb-cloud/tidb-cloud-billing.md#payment-method)
-    -   [AWS、Azure、または Google Cloud Marketplace からの請求](/tidb-cloud/tidb-cloud-billing.md#billing-from-aws-marketplace-azure-marketplace-or-google-cloud-marketplace)
+    -   [クラウドプロバイダーマーケットプレイスからの請求](/tidb-cloud/tidb-cloud-billing.md#billing-from-cloud-provider-marketplace)
     -   [Changefeedの請求](/tidb-cloud/tidb-cloud-billing-ticdc-rcu.md)
     -   [データ移行の請求](/tidb-cloud/tidb-cloud-billing-dm.md)
     -   [リカバリグループの請求](/tidb-cloud/tidb-cloud-billing-recovery-group.md)
@@ -401,18 +362,15 @@
     -   テラフォーム
         -   [Terraform 統合の概要](/tidb-cloud/terraform-tidbcloud-provider-overview.md)
         -   [TiDB Cloud Terraform プロバイダーを入手する](/tidb-cloud/terraform-get-tidbcloud-provider.md)
-        -   [TiDB Cloud専用クラスタリソースを使用する](/tidb-cloud/terraform-use-dedicated-cluster-resource.md)
-        -   [TiDB Cloud専用プライベートエンドポイント接続リソースを使用する](/tidb-cloud/terraform-use-dedicated-private-endpoint-connection-resource.md)
-        -   [TiDB Cloud専用 VPC ピアリング リソースを使用する](/tidb-cloud/terraform-use-dedicated-vpc-peering-resource.md)
-        -   [TiDB Cloud専用ネットワークコンテナリソースを使用する](/tidb-cloud/terraform-use-dedicated-network-container-resource.md)
-        -   [TiDB Cloud Serverless クラスタリソースを使用する](/tidb-cloud/terraform-use-serverless-cluster-resource.md)
-        -   [TiDB Cloud Serverless Branchリソースを使用する](/tidb-cloud/terraform-use-serverless-branch-resource.md)
-        -   [TiDB Cloud Serverless エクスポート リソースを使用する](/tidb-cloud/terraform-use-serverless-export-resource.md)
-        -   [SQL ユーザー リソースを使用する](/tidb-cloud/terraform-use-sql-user-resource.md)
-        -   [クラスタリソースの使用 (非推奨)](/tidb-cloud/terraform-use-cluster-resource.md)
-        -   [バックアップリソースを使用する](/tidb-cloud/terraform-use-backup-resource.md)
-        -   [復元リソースを使用する](/tidb-cloud/terraform-use-restore-resource.md)
-        -   [インポートリソースの使用](/tidb-cloud/terraform-use-import-resource.md)
+        -   [`tidbcloud_dedicated_cluster`リソースを使用する](/tidb-cloud/terraform-use-dedicated-cluster-resource.md)
+        -   [`tidbcloud_dedicated_private_endpoint_connection`リソースを使用する](/tidb-cloud/terraform-use-dedicated-private-endpoint-connection-resource.md)
+        -   [`tidbcloud_dedicated_vpc_peering`リソースを使用する](/tidb-cloud/terraform-use-dedicated-vpc-peering-resource.md)
+        -   [`tidbcloud_dedicated_network_container`リソースを使用する](/tidb-cloud/terraform-use-dedicated-network-container-resource.md)
+        -   [`tidbcloud_sql_user`リソースを使用する](/tidb-cloud/terraform-use-sql-user-resource.md)
+        -   [`tidbcloud_cluster`リソースを使用する（非推奨）](/tidb-cloud/terraform-use-cluster-resource.md)
+        -   [`tidbcloud_backup`リソースを使用する](/tidb-cloud/terraform-use-backup-resource.md)
+        -   [`tidbcloud_restore`リソースを使用する](/tidb-cloud/terraform-use-restore-resource.md)
+        -   [`tidbcloud_import`リソースを使用する](/tidb-cloud/terraform-use-import-resource.md)
         -   [クラスタリソースの移行](/tidb-cloud/terraform-migrate-cluster-resource.md)
     -   [ヴェルセル](/tidb-cloud/integrate-tidbcloud-with-vercel.md)
     -   [ザピエール](/tidb-cloud/integrate-tidbcloud-with-zapier.md)
@@ -435,6 +393,7 @@
     -   SQL文
         -   [概要](/sql-statements/sql-statement-overview.md)
         -   [`ADMIN`](/sql-statements/sql-statement-admin.md)
+        -   [`ADMIN ALTER DDL JOBS`](/sql-statements/sql-statement-admin-alter-ddl.md)
         -   [`ADMIN CANCEL DDL`](/sql-statements/sql-statement-admin-cancel-ddl.md)
         -   [`ADMIN CHECKSUM TABLE`](/sql-statements/sql-statement-admin-checksum-table.md)
         -   [`ADMIN CHECK [TABLE|INDEX]`](/sql-statements/sql-statement-admin-check-table-index.md)
@@ -610,6 +569,7 @@
             -   [JSONを返す関数](/functions-and-operators/json-functions/json-functions-return.md)
             -   [JSONユーティリティ関数](/functions-and-operators/json-functions/json-functions-utility.md)
             -   [JSONを集約する関数](/functions-and-operators/json-functions/json-functions-aggregate.md)
+            -   [JSONを検証する関数](/functions-and-operators/json-functions/json-functions-validate.md)
         -   [集計（GROUP BY）関数](/functions-and-operators/aggregate-group-by-functions.md)
         -   [GROUP BY 修飾子](/functions-and-operators/group-by-modifier.md)
         -   [ウィンドウ関数](/functions-and-operators/window-functions.md)
@@ -617,6 +577,7 @@
         -   [ユーティリティ関数](/functions-and-operators/utility-functions.md)
         -   [その他の機能](/functions-and-operators/miscellaneous-functions.md)
         -   [TiDB固有の機能](/functions-and-operators/tidb-functions.md)
+        -   [ユーティリティ関数](/functions-and-operators/utility-functions.md)
         -   [精密計算](/functions-and-operators/precision-math.md)
         -   [集合演算](/functions-and-operators/set-operators.md)
         -   [プッシュダウンの式のリスト](/functions-and-operators/expressions-pushed-down.md)
@@ -631,6 +592,7 @@
         -   [楽観的トランザクション](/optimistic-transaction.md)
         -   [悲観的な取引](/pessimistic-transaction.md)
         -   [非トランザクションDMLステートメント](/non-transactional-dml.md)
+        -   [パイプラインDML](/pipelined-dml.md)
     -   [ビュー](/views.md)
     -   [パーティショニング](/partitioned-table.md)
     -   [一時テーブル](/temporary-tables.md)
@@ -650,6 +612,7 @@
     -   システムテーブル
         -   `mysql`スキーマ
             -   [概要](/mysql-schema/mysql-schema.md)
+            -   [`tidb_mdl_view`](/mysql-schema/mysql-schema-tidb-mdl-view.md)
             -   [`user`](/mysql-schema/mysql-schema-user.md)
         -   情報スキーマ
             -   [概要](/information-schema/information-schema.md)
@@ -710,81 +673,17 @@
     -   [メタデータロック](/metadata-lock.md)
     -   [UUIDを使用する](/best-practices/uuid.md)
     -   [TiDB 高速テーブル作成](/accelerated-table-creation.md)
+    -   [スキーマキャッシュ](/schema-cache.md)
 -   APIリファレンス![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
     -   [概要](/tidb-cloud/api-overview.md)
     -   v1ベータ1
+        -   [TiDB Cloudスターターとエッセンシャル](https://docs.pingcap.com/tidbcloud/api/v1beta1/serverless)
+        -   [TiDB Cloud専用](https://docs.pingcap.com/tidbcloud/api/v1beta1/dedicated)
         -   [請求する](https://docs.pingcap.com/tidbcloud/api/v1beta1/billing)
         -   [データサービス](https://docs.pingcap.com/tidbcloud/api/v1beta1/dataservice)
         -   [IAMは](https://docs.pingcap.com/tidbcloud/api/v1beta1/iam)
         -   [MSP（非推奨）](https://docs.pingcap.com/tidbcloud/api/v1beta1/msp)
     -   [v1ベータ](https://docs.pingcap.com/tidbcloud/api/v1beta)
--   CLIリファレンス![BETA](https://docs-download.pingcap.com/media/images/docs/tidb-cloud/blank_transparent_placeholder.png)
-    -   [概要](/tidb-cloud/cli-reference.md)
-    -   認証
-        -   [ログイン](/tidb-cloud/ticloud-auth-login.md)
-        -   [ログアウト](/tidb-cloud/ticloud-auth-logout.md)
-        -   [誰だ？](/tidb-cloud/ticloud-auth-whoami.md)
-    -   サーバーレス
-        -   [作成する](/tidb-cloud/ticloud-cluster-create.md)
-        -   [消去](/tidb-cloud/ticloud-cluster-delete.md)
-        -   [説明する](/tidb-cloud/ticloud-cluster-describe.md)
-        -   [リスト](/tidb-cloud/ticloud-cluster-list.md)
-        -   [アップデート](/tidb-cloud/ticloud-serverless-update.md)
-        -   [支出限度額](/tidb-cloud/ticloud-serverless-spending-limit.md)
-        -   [地域](/tidb-cloud/ticloud-serverless-region.md)
-        -   [シェル](/tidb-cloud/ticloud-serverless-shell.md)
-        -   支店
-            -   [作成する](/tidb-cloud/ticloud-branch-create.md)
-            -   [消去](/tidb-cloud/ticloud-branch-delete.md)
-            -   [説明する](/tidb-cloud/ticloud-branch-describe.md)
-            -   [リスト](/tidb-cloud/ticloud-branch-list.md)
-            -   [シェル](/tidb-cloud/ticloud-branch-shell.md)
-        -   輸入
-            -   [キャンセル](/tidb-cloud/ticloud-import-cancel.md)
-            -   [説明する](/tidb-cloud/ticloud-import-describe.md)
-            -   [リスト](/tidb-cloud/ticloud-import-list.md)
-            -   [始める](/tidb-cloud/ticloud-import-start.md)
-        -   輸出
-            -   [作成する](/tidb-cloud/ticloud-serverless-export-create.md)
-            -   [説明する](/tidb-cloud/ticloud-serverless-export-describe.md)
-            -   [リスト](/tidb-cloud/ticloud-serverless-export-list.md)
-            -   [キャンセル](/tidb-cloud/ticloud-serverless-export-cancel.md)
-            -   [ダウンロード](/tidb-cloud/ticloud-serverless-export-download.md)
-        -   SQLユーザー
-            -   [作成する](/tidb-cloud/ticloud-serverless-sql-user-create.md)
-            -   [消去](/tidb-cloud/ticloud-serverless-sql-user-delete.md)
-            -   [リスト](/tidb-cloud/ticloud-serverless-sql-user-list.md)
-            -   [アップデート](/tidb-cloud/ticloud-serverless-sql-user-update.md)
-        -   監査ログ
-            -   [設定](/tidb-cloud/ticloud-auditlog-config.md)
-            -   [説明する](/tidb-cloud/ticloud-auditlog-describe.md)
-            -   [ダウンロード](/tidb-cloud/ticloud-auditlog-download.md)
-            -   フィルタールール
-                -   [作成する](/tidb-cloud/ticloud-auditlog-filter-create.md)
-                -   [消去](/tidb-cloud/ticloud-auditlog-filter-delete.md)
-                -   [説明する](/tidb-cloud/ticloud-auditlog-filter-describe.md)
-                -   [リスト](/tidb-cloud/ticloud-auditlog-filter-list.md)
-                -   [テンプレート](/tidb-cloud/ticloud-auditlog-filter-template.md)
-                -   [アップデート](/tidb-cloud/ticloud-auditlog-filter-update.md)
-        -   承認済みネットワーク
-            -   [作成する](/tidb-cloud/ticloud-serverless-authorized-network-create.md)
-            -   [消去](/tidb-cloud/ticloud-serverless-authorized-network-delete.md)
-            -   [リスト](/tidb-cloud/ticloud-serverless-authorized-network-list.md)
-            -   [アップデート](/tidb-cloud/ticloud-serverless-authorized-network-update.md)
-    -   [愛](/tidb-cloud/ticloud-ai.md)
-    -   [完了](/tidb-cloud/ticloud-completion.md)
-    -   設定
-        -   [作成する](/tidb-cloud/ticloud-config-create.md)
-        -   [消去](/tidb-cloud/ticloud-config-delete.md)
-        -   [説明する](/tidb-cloud/ticloud-config-describe.md)
-        -   [編集](/tidb-cloud/ticloud-config-edit.md)
-        -   [リスト](/tidb-cloud/ticloud-config-list.md)
-        -   [セット](/tidb-cloud/ticloud-config-set.md)
-        -   [使用](/tidb-cloud/ticloud-config-use.md)
-    -   プロジェクト
-        -   [リスト](/tidb-cloud/ticloud-project-list.md)
-    -   [アップグレード](/tidb-cloud/ticloud-upgrade.md)
-    -   [ヘルプ](/tidb-cloud/ticloud-help.md)
 -   一般的な参考資料
     -   TiDBクラスタアーキテクチャ
         -   [概要](/tidb-architecture.md)
@@ -807,7 +706,6 @@
         -   [導入](/tidb-distributed-execution-framework.md)
         -   [TiDB グローバルソート](/tidb-global-sort.md)
     -   [TiDB Cloud専用制限とクォータ](/tidb-cloud/limitations-and-quotas.md)
-    -   [TiDB Cloudサーバーレスの制限](/tidb-cloud/serverless-limitations.md)
     -   [TiDB Cloudの SQL 機能が制限されている](/tidb-cloud/limited-sql-features.md)
     -   [TiDB の制限](/tidb-limitations.md)
     -   ベンチマーク
@@ -830,14 +728,9 @@
     -   [システム変数](/system-variables.md)
     -   [サーバーステータス変数](/status-variables.md)
     -   [テーブルフィルター](/table-filter.md)
-    -   リソース割り当ての最適化
-        -   [リソース割り当ての概要](/tidb-cloud/optimize-resource-allocation.md)
-        -   [リソース管理](/tidb-resource-control.md)
-        -   TiDBノードグループ
-            -   [TiDBノードグループの概要](/tidb-cloud/tidb-node-group-overview.md)
-            -   [TiDBノードグループの管理](/tidb-cloud/tidb-node-group-management.md)
     -   [外部ストレージサービスのURI形式](/external-storage-uri.md)
     -   [DDL実行の原則とベストプラクティス](/ddl-introduction.md)
+    -   [バッチ処理](/batch-processing.md)
     -   [データとインデックス間の不整合のトラブルシューティング](/troubleshoot-data-inconsistency-errors.md)
     -   [通知](/tidb-cloud/notifications.md)
     -   [用語集](/tidb-cloud/tidb-cloud-glossary.md)
@@ -853,13 +746,12 @@
         -   接続: IMチケットの作成とサブスクリプションの更新
             -   [Slack 経由でチケットを作成し、チケットの更新を購読する](/tidb-cloud/connected-slack-ticket-creation.md)
             -   [Larkでチケットを作成し、チケットの更新を購読する](/tidb-cloud/connected-lark-ticket-creation.md)
-        -   接続: サポートチケットの IM 対話
+        -   接続: サポートチケットのIMインタラクション
             -   [Slack経由でサポートチケットとやり取りする](/tidb-cloud/connected-slack-ticket-interaction.md)
             -   [Lark経由でサポートチケットとやり取りする](/tidb-cloud/connected-lark-ticket-interaction.md)
     -   [サポートを受ける](/tidb-cloud/tidb-cloud-support.md)
 -   よくある質問
     -   [TiDB Cloudに関するよくある質問](/tidb-cloud/tidb-cloud-faq.md)
-    -   [TiDB Cloudサーバーレスに関するよくある質問](/tidb-cloud/serverless-faqs.md)
 
 ## リリース {#releases}
 

@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD007 -->
 <!-- markdownlint-disable MD041 -->
 
-# 目录 <!--Corresponding EN commit: 3d8a0e345ee4eee02da096908dca0ae685b3153e-->
+# 目录 <!--Corresponding EN commit: 07b75662984c9bc38e1dd23a0f7bc5edcf29e627-->
 
 ## 快速开始
 
@@ -219,6 +219,7 @@
       - [GC 配置](/garbage-collection-configuration.md)
     - [TiFlash 调优](/tiflash/tune-tiflash-performance.md)
   - 优化资源分配
+    - [资源分配概览](/tidb-cloud/optimize-resource-allocation.md)
     - 资源管理
       - [使用资源管控 (Resource Control) 实现资源组限制和流控](/tidb-resource-control-ru-groups.md)
       - [管理资源消耗超出预期的查询 (Runaway Queries)](/tidb-resource-control-runaway-queries.md)
@@ -241,6 +242,7 @@
     - [从云存储导入示例数据 (SQL 文件)](/tidb-cloud/import-sample-data.md)
     - [从云存储导入 CSV 文件](/tidb-cloud/import-csv-files.md)
     - [从云存储导入 Parquet 文件](/tidb-cloud/import-parquet-files.md)
+    - [从云存储导入快照文件](/tidb-cloud/import-snapshot-files.md)
     - [使用 MySQL CLI 导入](/tidb-cloud/import-with-mysql-cli.md)
   - 参考
     - [为 TiDB Cloud Dedicated 配置外部存储访问](/tidb-cloud/dedicated-external-storage.md)
@@ -311,6 +313,7 @@
   - [故障转移和重新保护数据库](/tidb-cloud/recovery-group-failover.md)
   - [删除恢复组](/tidb-cloud/recovery-group-delete.md)
 - 安全
+  - [安全概览](/tidb-cloud/security-overview.md)
   - 身份访问控制
     - [密码验证](/tidb-cloud/tidb-cloud-password-authentication.md)
     - [标准 SSO 身份验证](/tidb-cloud/tidb-cloud-sso-authentication.md)
@@ -325,7 +328,8 @@
     - [通过 VPC Peering 连接](/tidb-cloud/set-up-vpc-peering-connections.md)
     - [通过 TLS 连接](/tidb-cloud/tidb-cloud-tls-connect-to-dedicated.md)
   - 数据访问控制
-    - [使用客户管理的加密密钥进行静态加密](/tidb-cloud/tidb-cloud-encrypt-cmek.md)
+    - [在 AWS 上使用客户管理的加密密钥实现静态加密](/tidb-cloud/tidb-cloud-encrypt-cmek-aws.md)
+    - [在 Azure 上使用客户管理的加密密钥实现静态加密](/tidb-cloud/tidb-cloud-encrypt-cmek-azure.md)
     - [用户可控的日志脱敏](/tidb-cloud/tidb-cloud-log-redaction.md)
   - 数据库访问控制
     - [配置集群密码设置](/tidb-cloud/configure-security-settings.md)
@@ -769,3 +773,7 @@
   - [[2023-11-14] TiDB Cloud Dedicated Scale 功能维护通知](/tidb-cloud/notification-2023-11-14-scale-feature-maintenance.md)
   - [[2023-09-26] TiDB Cloud 控制台维护通知](/tidb-cloud/notification-2023-09-26-console-maintenance.md)
   - [[2023-08-31] TiDB Cloud 控制台维护通知](/tidb-cloud/notification-2023-08-31-console-maintenance.md)
+
+## _BUILD_ALLOWLIST
+
+- [Manage Database Users and Roles](/tidb-cloud/configure-sql-users.md)

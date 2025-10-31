@@ -2,7 +2,7 @@
 title: TiDB Cloud Documentation
 hide_sidebar: true
 hide_commit: true
-summary: TiDB Cloudは、TiDBの優れた機能すべてをクラウドに提供する、フルマネージドのデータベース・アズ・ア・サービス（DBaaS）です。学習、試用、開発、保守、移行、監視、チューニング、セキュリティ保護、課金、統合、参照のためのガイド、サンプル、リファレンスを提供しています。
+summary: TiDB Cloudは、 TiDBの優れた機能すべてをクラウドに提供する、フルマネージドのデータベース・アズ・ア・サービス（DBaaS）です。学習、試用、開発、保守、移行、監視、チューニング、セキュリティ保護、課金、統合、参照のためのガイド、サンプル、リファレンスを提供しています。
 ---
 
 <LearningPathContainer platform="tidb-cloud" title="TiDB Cloud" subTitle="TiDB Cloud is a fully-managed Database-as-a-Service (DBaaS) that brings everything great about TiDB to your cloud. Find the guide, samples, and references you need to use TiDB Cloud.">
@@ -19,7 +19,7 @@ summary: TiDB Cloudは、TiDBの優れた機能すべてをクラウドに提供
 
 <LearningPath label="Try" icon="cloud5">
 
-[TiDB Cloudを試してみる](https://docs.pingcap.com/tidbcloud/tidb-cloud-quickstart/?plan=essential)
+[TiDB Cloud を試してみる](https://docs.pingcap.com/tidbcloud/tidb-cloud-quickstart/?plan=essential)
 
 [TiDB + AIを試す](https://docs.pingcap.com/tidbcloud/vector-search-get-started-using-python/?plan=essential)
 
@@ -49,7 +49,7 @@ summary: TiDB Cloudは、TiDBの優れた機能すべてをクラウドに提供
 
 [データのバックアップと復元](https://docs.pingcap.com/tidbcloud/backup-and-restore-serverless/?plan=essential)
 
-[API を使用する (ベータ版)](https://docs.pingcap.com/tidbcloud/api-overview/?plan=essential)
+[API を使用する（ベータ版）](https://docs.pingcap.com/tidbcloud/api-overview/?plan=essential)
 
 [TiDB Cloud CLIを使用する](https://docs.pingcap.com/tidbcloud/get-started-with-cli/?plan=essential)
 
@@ -97,9 +97,9 @@ summary: TiDB Cloudは、TiDBの優れた機能すべてをクラウドに提供
 
 [ユーザープロファイルの管理](https://docs.pingcap.com/tidbcloud/manage-user-access#manage-user-profiles/?plan=essential)
 
-[組織のアクセスを管理する](https://docs.pingcap.com/tidbcloud/manage-user-access#manage-organization-access/?plan=essential)
+[組織アクセスの管理](https://docs.pingcap.com/tidbcloud/manage-user-access/?plan=essential#manage-organization-access)
 
-[プロジェクトアクセスの管理](https://docs.pingcap.com/tidbcloud/manage-user-access#manage-project-access/?plan=essential)
+[プロジェクトアクセスの管理](https://docs.pingcap.com/tidbcloud/manage-user-access/?plan=essential#manage-project-access)
 
 [パブリックエンドポイントのファイアウォールルールを構成する](https://docs.pingcap.com/tidbcloud/configure-serverless-firewall-rules-for-public-endpoints/?plan=essential)
 
@@ -107,7 +107,7 @@ summary: TiDB Cloudは、TiDBの優れた機能すべてをクラウドに提供
 
 <LearningPath label="Billing" icon="cloud2">
 
-[価格](https://docs.pingcap.com/tidbcloud/tidb-cloud-billing#pricing-for-starter/?plan=essential)
+[価格](https://www.pingcap.com/tidb-cloud-essential-pricing-details/)
 
 [請求書](https://docs.pingcap.com/tidbcloud/tidb-cloud-billing#invoices/?plan=essential)
 

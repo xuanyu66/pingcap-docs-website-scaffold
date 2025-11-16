@@ -45,9 +45,12 @@
     - [挂起和恢复 TiDB 集群](suspend-tidb-cluster.md)
     - [重启 TiDB 集群](restart-a-tidb-cluster.md)
     - [销毁 TiDB 集群](destroy-a-tidb-cluster.md)
+    - [维护 TiDB 集群所在的 Kubernetes 节点](maintain-a-kubernetes-node.md)
 - 故障诊断
+  - [使用技巧](tips.md)
   - [部署错误](deploy-failures.md)
   - [集群异常](exceptions.md)
+- [常见问题](faq.md)
 - 参考
   - 架构
     - [TiDB Operator 架构](architecture.md)

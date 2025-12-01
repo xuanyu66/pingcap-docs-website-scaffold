@@ -473,7 +473,7 @@
       - [使用 TiUP 联网部署（推荐）](/dm/deploy-a-dm-cluster-using-tiup.md)
       - [使用 TiUP 离线部署](/dm/deploy-a-dm-cluster-using-tiup-offline.md)
       - [使用 Binary 部署](/dm/deploy-a-dm-cluster-using-binary.md)
-      - [在 Kubernetes 环境中部署](https://docs.pingcap.com/zh/tidb-in-kubernetes/dev/deploy-tidb-dm)
+      - [在 Kubernetes 环境中部署](https://docs.pingcap.com/zh/tidb-in-kubernetes/v1.6/deploy-tidb-dm)
     - 入门指南
       - [创建数据源](/dm/quick-start-create-source.md)
       - [数据源操作](/dm/dm-manage-source.md)
@@ -1073,7 +1073,7 @@
   - [发布版本汇总](/releases/release-notes.md)
   - [版本发布时间线](/releases/release-timeline.md)
   - [TiDB 版本规则](/releases/versioning.md)
-  - [版本周期支持策略](https://cn.pingcap.com/tidb-release-support-policy/)
+  - [版本周期支持策略](https://pingkai.cn/tidb-release-support-policy)
   - [TiDB 离线包](/binary-package.md)
   - v8.1
     - [8.1.2](/releases/release-8.1.2.md)

@@ -150,7 +150,7 @@
         -   [FastScanを使用する](/tiflash/use-fastscan.md)
         -   [サポートされているプッシュダウン計算](/tiflash/tiflash-supported-pushdown-calculations.md)
         -   [TiFlashクエリ結果のマテリアライゼーション](/tiflash/tiflash-results-materialization.md)
-        -   [TiFlash遅延マテリアライゼーション](/tiflash/tiflash-late-materialization.md)
+        -   [TiFlash遅延実体化](/tiflash/tiflash-late-materialization.md)
         -   [互換性](/tiflash/tiflash-compatibility.md)
         -   [パイプライン実行モデル](/tiflash/tiflash-pipeline-model.md)
     -   監視と警告
@@ -165,6 +165,7 @@
         -   サードパーティのメトリクス統合
             -   [概要](/tidb-cloud/third-party-monitoring-integrations.md)
             -   [DatadogとNew Relicの統合の移行](/tidb-cloud/migrate-metrics-integrations.md)
+            -   [Prometheus統合の移行](/tidb-cloud/migrate-prometheus-metrics-integrations.md)
         -   [TiDB Cloudクリニック](/tidb-cloud/tidb-cloud-clinic.md)
     -   パフォーマンスの調整
         -   [概要](/tidb-cloud/tidb-cloud-tune-performance-overview.md)
@@ -325,7 +326,7 @@
         -   [アイデンティティアクセス管理](/tidb-cloud/manage-user-access.md)
         -   [OAuth 2.0](/tidb-cloud/oauth2.md)
     -   ネットワークアクセス制御
-        -   [IPアクセスリストを構成する](/tidb-cloud/configure-ip-access-list.md)
+        -   [IPアクセスリストを設定する](/tidb-cloud/configure-ip-access-list.md)
         -   [AWS のプライベートエンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections.md)
         -   [Azure のプライベート エンドポイント経由で接続する](/tidb-cloud/set-up-private-endpoint-connections-on-azure.md)
         -   [プライベートエンドポイント経由で Google Cloud に接続する](/tidb-cloud/set-up-private-endpoint-connections-on-google-cloud.md)
@@ -350,7 +351,7 @@
     -   [クラウドプロバイダーマーケットプレイスからの請求](/tidb-cloud/tidb-cloud-billing.md#billing-from-cloud-provider-marketplace)
     -   [Changefeedの請求](/tidb-cloud/tidb-cloud-billing-ticdc-rcu.md)
     -   [データ移行の請求](/tidb-cloud/tidb-cloud-billing-dm.md)
-    -   [リカバリグループの請求](/tidb-cloud/tidb-cloud-billing-recovery-group.md)
+    -   [回復グループの請求](/tidb-cloud/tidb-cloud-billing-recovery-group.md)
     -   [予算を管理する](/tidb-cloud/tidb-cloud-budget.md)
 -   統合
     -   [エアバイト](/tidb-cloud/integrate-tidbcloud-with-airbyte.md)
@@ -430,6 +431,7 @@
         -   [`BACKUP`](/sql-statements/sql-statement-backup.md)
         -   [`BATCH`](/sql-statements/sql-statement-batch.md)
         -   [`BEGIN`](/sql-statements/sql-statement-begin.md)
+        -   [`CANCEL DISTRIBUTION JOB`](/sql-statements/sql-statement-cancel-distribution-job.md)
         -   [`CANCEL IMPORT JOB`](/sql-statements/sql-statement-cancel-import-job.md)
         -   [`COMMIT`](/sql-statements/sql-statement-commit.md)
         -   [`CREATE [GLOBAL|SESSION] BINDING`](/sql-statements/sql-statement-create-binding.md)
@@ -447,6 +449,7 @@
         -   [`DELETE`](/sql-statements/sql-statement-delete.md)
         -   [`DESC`](/sql-statements/sql-statement-desc.md)
         -   [`DESCRIBE`](/sql-statements/sql-statement-describe.md)
+        -   [`DISTRIBUTE TABLE`](/sql-statements/sql-statement-distribute-table.md)
         -   [`DO`](/sql-statements/sql-statement-do.md)
         -   [`DROP [GLOBAL|SESSION] BINDING`](/sql-statements/sql-statement-drop-binding.md)
         -   [`DROP DATABASE`](/sql-statements/sql-statement-drop-database.md)
@@ -510,6 +513,7 @@
         -   [`SHOW CREATE TABLE`](/sql-statements/sql-statement-show-create-table.md)
         -   [`SHOW CREATE USER`](/sql-statements/sql-statement-show-create-user.md)
         -   [`SHOW DATABASES`](/sql-statements/sql-statement-show-databases.md)
+        -   [`SHOW DISTRIBUTION JOBS`](/sql-statements/sql-statement-show-distribution-jobs.md)
         -   [`SHOW ENGINES`](/sql-statements/sql-statement-show-engines.md)
         -   [`SHOW ERRORS`](/sql-statements/sql-statement-show-errors.md)
         -   [`SHOW FIELDS FROM`](/sql-statements/sql-statement-show-fields-from.md)
@@ -532,6 +536,7 @@
         -   [`SHOW STATS_META`](/sql-statements/sql-statement-show-stats-meta.md)
         -   [`SHOW STATS_TOPN`](/sql-statements/sql-statement-show-stats-topn.md)
         -   [`SHOW STATUS`](/sql-statements/sql-statement-show-status.md)
+        -   [`SHOW TABLE DISTRIBUTION`](/sql-statements/sql-statement-show-table-distribution.md)
         -   [`SHOW TABLE NEXT_ROW_ID`](/sql-statements/sql-statement-show-table-next-rowid.md)
         -   [`SHOW TABLE REGIONS`](/sql-statements/sql-statement-show-table-regions.md)
         -   [`SHOW TABLE STATUS`](/sql-statements/sql-statement-show-table-status.md)
@@ -588,6 +593,7 @@
         -   [集合演算](/functions-and-operators/set-operators.md)
         -   [プッシュダウンの式のリスト](/functions-and-operators/expressions-pushed-down.md)
     -   [クラスター化インデックス](/clustered-indexes.md)
+    -   [グローバルインデックス](/global-indexes.md)
     -   [制約](/constraints.md)
     -   [生成された列](/generated-columns.md)
     -   [SQLモード](/sql-mode.md)
@@ -737,10 +743,10 @@
     -   [テーブルフィルター](/table-filter.md)
     -   [外部ストレージサービスのURI形式](/external-storage-uri.md)
     -   [DDL実行の原則とベストプラクティス](/ddl-introduction.md)
+    -   [DDL文に埋め込まれた`ANALYZE`](/ddl_embedded_analyze.md)
     -   [バッチ処理](/batch-processing.md)
     -   [データとインデックス間の不整合のトラブルシューティング](/troubleshoot-data-inconsistency-errors.md)
     -   [通知](/tidb-cloud/notifications.md)
-    -   [用語集](/tidb-cloud/tidb-cloud-glossary.md)
 -   サポートプラン
     -   [コネクテッドケアの概要](/tidb-cloud/connected-care-overview.md)
     -   [コネクテッドケアの詳細](/tidb-cloud/connected-care-detail.md)
@@ -759,6 +765,7 @@
     -   [サポートを受ける](/tidb-cloud/tidb-cloud-support.md)
 -   よくある質問
     -   [TiDB Cloudよくある質問](/tidb-cloud/tidb-cloud-faq.md)
+-   [用語集](/tidb-cloud/tidb-cloud-glossary.md)
 
 ## リリース {#releases}
 

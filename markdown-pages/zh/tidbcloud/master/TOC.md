@@ -1,14 +1,15 @@
 <!-- markdownlint-disable MD007 -->
 <!-- markdownlint-disable MD041 -->
 
-# 目录 <!--Corresponding EN commit: b5743ac222ce25c5dbf99835ab3ad06b577896e6-->
+# 目录 <!--Corresponding EN commit: 127d74b2e3fd9769faa8773107c33711f39aa2b6-->
 
 ## 快速开始
 
 - 为什么选择 TiDB Cloud
-  - [TiDB Cloud 介绍](/tidb-cloud/tidb-cloud-intro.md)
+  - [简介](/tidb-cloud/tidb-cloud-intro.md)
+  - [功能概览](/tidb-cloud/features.md)
   - [与 MySQL 的兼容性](/mysql-compatibility.md)
-- TiDB Cloud 快速上手
+- 快速上手
   - [试用 TiDB Cloud](/tidb-cloud/tidb-cloud-quickstart.md)
   - [试用 TiDB + AI](/vector-search/vector-search-get-started-using-python.md)
   - [试用 HTAP](/tidb-cloud/tidb-cloud-htap-quickstart.md)
@@ -230,6 +231,9 @@
     - TiDB 节点组
       - [TiDB 节点组概述](/tidb-cloud/tidb-node-group-overview.md)
       - [管理 TiDB 节点组](/tidb-cloud/tidb-node-group-management.md)
+  - 通过 TiProxy 管理连接
+    - [TiProxy 概览](/tidb-cloud/tiproxy-overview-for-cloud.md)
+    - [管理 TiProxy](/tidb-cloud/tiproxy-management.md)
   - [升级 TiDB 集群](/tidb-cloud/upgrade-tidb-cluster.md)
   - [删除 TiDB 集群](/tidb-cloud/delete-tidb-cluster.md)
 - 迁移或导入数据
@@ -311,11 +315,6 @@
     - [在 Azure 中设置自托管 Kafka Private Link 服务](/tidb-cloud/setup-azure-self-hosted-kafka-private-link-service.md)
     - [在 Google Cloud 中设置自托管 Kafka Private Service Connect](/tidb-cloud/setup-self-hosted-kafka-private-service-connect.md)
     - [为 Changefeed 设置 Private Endpoint](/tidb-cloud/set-up-sink-private-endpoint.md)
-- 灾难恢复
-  - [恢复组概述](/tidb-cloud/recovery-group-overview.md)
-  - [快速上手](/tidb-cloud/recovery-group-get-started.md)
-  - [故障转移和重新保护数据库](/tidb-cloud/recovery-group-failover.md)
-  - [删除恢复组](/tidb-cloud/recovery-group-delete.md)
 - 安全
   - [安全概览](/tidb-cloud/security-overview.md)
   - 身份访问控制

@@ -695,12 +695,13 @@
     - [MSP (Deprecated)](https://docs.pingcap.com/tidbcloud/api/v1beta1/msp)
   - [v1beta](https://docs.pingcap.com/tidbcloud/api/v1beta)
 - General Reference
-  - TiDB Cluster Architecture
+  - TiDB Classic Architecture
     - [Overview](/tidb-architecture.md)
     - [Storage](/tidb-storage.md)
     - [Computing](/tidb-computing.md)
     - [Scheduling](/tidb-scheduling.md)
     - [TSO](/tso.md)
+  - [TiDB X Architecture](/tidb-cloud/tidb-x-architecture.md)
   - Storage Engines
     - TiKV
       - [TiKV Overview](/tikv-overview.md)
@@ -753,6 +754,8 @@
     - Connected: IM Subscription for TiDB Cloud Alerts
       - [Subscribe via Slack](/tidb-cloud/monitor-alert-slack.md)
       - [Subscribe via Zoom](/tidb-cloud/monitor-alert-zoom.md)
+      - [Subscribe via Flashduty](/tidb-cloud/monitor-alert-flashduty.md)
+      - [Subscribe via PagerDuty](/tidb-cloud/monitor-alert-pagerduty.md)
     - Connected: IM Ticket Creation and Update Subscription
       - [Create Tickets and Subscribe to Ticket Updates via Slack](/tidb-cloud/connected-slack-ticket-creation.md)
       - [Create Tickets and Subscribe to Ticket Updates via Lark](/tidb-cloud/connected-lark-ticket-creation.md)

@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD007 -->
 <!-- markdownlint-disable MD041 -->
 
-# 目录 <!--Corresponding EN commit: 127d74b2e3fd9769faa8773107c33711f39aa2b6-->
+# 目录 <!--Corresponding EN commit: 2711d8da1380e6ae5fdfd8f3b213fd521333f33d-->
 
 ## 快速开始
 
@@ -349,7 +349,6 @@
   - [设置通过云提供商的 Marketplace 计费](/tidb-cloud/tidb-cloud-billing.md#billing-from-cloud-provider-marketplace)
   - [Changefeed 计费](/tidb-cloud/tidb-cloud-billing-ticdc-rcu.md)
   - [数据迁移计费](/tidb-cloud/tidb-cloud-billing-dm.md)
-  - [恢复组计费](/tidb-cloud/tidb-cloud-billing-recovery-group.md)
   - [管理预算](/tidb-cloud/tidb-cloud-budget.md)
 - 集成
   - [Airbyte](/tidb-cloud/integrate-tidbcloud-with-airbyte.md)
@@ -754,6 +753,8 @@
     - Connected：通过 IM 订阅 TiDB Cloud 告警
       - [通过 Slack 订阅](/tidb-cloud/monitor-alert-slack.md)
       - [通过 Zoom 订阅](/tidb-cloud/monitor-alert-zoom.md)
+      - [通过 Flashduty 订阅](/tidb-cloud/monitor-alert-flashduty.md)
+      - [通过 PagerDuty 订阅](/tidb-cloud/monitor-alert-pagerduty.md)
     - Connected：通过 IM 创建工单并订阅更新
       - [通过 Slack 创建工单并订阅工单更新](/tidb-cloud/connected-slack-ticket-creation.md)
       - [通过 Lark 创建工单并订阅工单更新](/tidb-cloud/connected-lark-ticket-creation.md)
@@ -768,7 +769,8 @@
 ## 发布
 
 - Release Notes
-  - [2025](/tidb-cloud/tidb-cloud-release-notes.md)
+  - [2026](/tidb-cloud/tidb-cloud-release-notes.md)
+  - [2025](/tidb-cloud/release-notes-2025.md)
   - [2024](/tidb-cloud/release-notes-2024.md)
   - [2023](/tidb-cloud/release-notes-2023.md)
   - [2022](/tidb-cloud/release-notes-2022.md)

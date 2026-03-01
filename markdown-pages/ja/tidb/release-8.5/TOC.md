@@ -24,7 +24,6 @@
         -   [PD マイクロサービス トポロジ](/pd-microservices-deployment-topology.md)
         -   [TiProxyトポロジ](/tiproxy/tiproxy-deployment-topology.md)
         -   [TiCDC トポロジ](/ticdc-deployment-topology.md)
-        -   [TiSparkトポロジ](/tispark-deployment-topology.md)
         -   [クロスDCトポロジ](/geo-distributed-deployment-topology.md)
         -   [ハイブリッドトポロジ](/hybrid-deployment-topology.md)
     -   [TiUPを使用してデプロイ](/production-deployment-using-tiup.md)
@@ -40,7 +39,7 @@
     -   [インポートのベストプラクティス](/tidb-lightning/data-import-best-practices.md)
     -   移行シナリオ
         -   [Auroraからの移行](/migrate-aurora-to-tidb.md)
-        -   [MySQLから小規模データセットを移行する](/migrate-small-mysql-to-tidb.md)
+        -   [MySQLから小規模なデータセットを移行する](/migrate-small-mysql-to-tidb.md)
         -   [MySQLから大規模なデータセットを移行する](/migrate-large-mysql-to-tidb.md)
         -   [小規模データセットの MySQL シャードの移行とマージ](/migrate-small-mysql-shards-to-tidb.md)
         -   [大規模データセットの MySQL シャードの移行とマージ](/migrate-large-mysql-shards-to-tidb.md)
@@ -76,7 +75,7 @@
         -   [アラートルール](/ticdc/ticdc-alert-rules.md)
     -   統合シナリオ
         -   [概要](/integration-overview.md)
-        -   [ConfluentとSnowflakeとの統合](/ticdc/integrate-confluent-using-ticdc.md)
+        -   [Confluent Cloud、Snowflake、ksqlDB、SQL Server との統合](/ticdc/integrate-confluent-using-ticdc.md)
         -   [Apache Kafka および Apache Flink との統合](/replicate-data-to-kafka.md)
     -   参照
         -   TiCDCアーキテクチャ
@@ -424,7 +423,7 @@
         -   [アーキテクチャ](/dm/dm-arch.md)
         -   [クイックスタート](/dm/quick-start-with-dm.md)
         -   [ベストプラクティス](/dm/dm-best-practices.md)
-        -   DMクラスタをデプロイ
+        -   DMクラスターをデプロイ
             -   [ハードウェアおよびソフトウェアの要件](/dm/dm-hardware-and-software-requirements.md)
             -   [TiUPを使用する（推奨）](/dm/deploy-a-dm-cluster-using-tiup.md)
             -   [TiUPをオフラインで使用する](/dm/deploy-a-dm-cluster-using-tiup-offline.md)
@@ -467,7 +466,7 @@
             -   性能チューニング
                 -   [ベンチマーク](/dm/dm-benchmark-v5.4.0.md)
                 -   [構成の最適化](/dm/dm-tune-configuration.md)
-                -   [DMパフォーマンスをテストする](/dm/dm-performance-test.md)
+                -   [DMパフォーマンスのテスト](/dm/dm-performance-test.md)
                 -   [パフォーマンスの問題に対処する](/dm/dm-handle-performance-issues.md)
             -   データソースの管理
                 -   [移行するMySQLインスタンスを切り替える](/dm/usage-scenario-master-slave-switch.md)
@@ -553,8 +552,6 @@
         -   [クイックスタート](/clinic/quick-start-with-clinic.md)
         -   [PingCAPクリニックを使用したクラスターのトラブルシューティング](/clinic/clinic-user-guide-for-tiup.md)
         -   [PingCAPクリニック診断データ](/clinic/clinic-data-instruction-for-tiup.md)
-    -   ティスパーク
-        -   [ユーザーガイド](/tispark-overview.md)
     -   同期差分インスペクター
         -   [概要](/sync-diff-inspector/sync-diff-inspector-overview.md)
         -   [異なるスキーマ/テーブル名を持つテーブルのデータチェック](/sync-diff-inspector/route-diff.md)
@@ -587,7 +584,6 @@
         -   [概要](/tiflash/tiflash-overview.md)
         -   [TiFlashレプリカを作成する](/tiflash/create-tiflash-replicas.md)
         -   [TiDB を使用してTiFlashレプリカを読み取る](/tiflash/use-tidb-to-read-tiflash.md)
-        -   [TiSparkを使用してTiFlashレプリカを読み取る](/tiflash/use-tispark-to-read-tiflash.md)
         -   [MPPモードを使用する](/tiflash/use-tiflash-mpp-mode.md)
         -   [FastScanを使用する](/tiflash/use-fastscan.md)
         -   [分散ストレージとコンピューティングアーキテクチャと S3 サポート](/tiflash/tiflash-disaggregated-and-s3.md)
@@ -625,7 +621,7 @@
         -   [パフォーマンスの概要](/grafana-performance-overview-dashboard.md)
         -   [ティドブ](/grafana-tidb-dashboard.md)
         -   [PD](/grafana-pd-dashboard.md)
-        -   [ティクブ](/grafana-tikv-dashboard.md)
+        -   [TiKV](/grafana-tikv-dashboard.md)
         -   [TiFlash](/tiflash/monitor-tiflash.md)
         -   [TiCDC](/ticdc/monitor-ticdc.md)
         -   [リソース管理](/grafana-resource-control-dashboard.md)
@@ -873,6 +869,7 @@
         -   文字セットと照合順序
             -   [概要](/character-set-and-collation.md)
             -   [GBK](/character-set-gbk.md)
+        -   [TTL (存続時間)](/time-to-live.md)
         -   [SQLの配置ルール](/placement-rules-in-sql.md)
         -   システムテーブル
             -   `mysql`スキーマ
